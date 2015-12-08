@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6BC440DDD7EEBF5F28A30B4F7FEE4D1EFA6FBAF2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "906D38F2B5A142C35BB6D6A8FD645FF8049C837D" : 0,
+    "6BC440DDD7EEBF5F28A30B4F7FEE4D1EFA6FBAF2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E75FB4B8-6793-4BAE-AA0A-F5CDAE8C2C8E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "906D38F2B5A142C35BB6D6A8FD645FF8049C837D" : "xmppChat",
+    "6BC440DDD7EEBF5F28A30B4F7FEE4D1EFA6FBAF2" : "chat\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "xmppChat",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "xmppChat.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Sunny-guangge\/chat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6BC440DDD7EEBF5F28A30B4F7FEE4D1EFA6FBAF2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Sunny-guangge\/xmppChat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "906D38F2B5A142C35BB6D6A8FD645FF8049C837D"
+    }
+  ]
+}
