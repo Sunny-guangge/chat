@@ -39,6 +39,8 @@
 		CE41C3601C0594B400666823 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41C34F1C0594B400666823 /* UIImageView+WebCache.m */; };
 		CE41C3611C0594B400666823 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41C3511C0594B400666823 /* UIView+WebCacheOperation.m */; };
 		CE4464BD1C16D790000F80DB /* CKFace.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4464BC1C16D790000F80DB /* CKFace.m */; };
+		CE4464C31C16DDAE000F80DB /* ChatViewImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4464C11C16DDAE000F80DB /* ChatViewImages.xcassets */; };
+		CE4464C41C16DDAE000F80DB /* normal_face.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE4464C21C16DDAE000F80DB /* normal_face.plist */; };
 		CE4E8AC31C0D4114007D2C5E /* CKPersonalDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC21C0D4114007D2C5E /* CKPersonalDataTableViewController.m */; };
 		CE4E8AC61C0D49A4007D2C5E /* CKUserDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC51C0D49A4007D2C5E /* CKUserDetailTableViewController.m */; };
 		CE4E8AC91C0D55F4007D2C5E /* CKBottleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC81C0D55F4007D2C5E /* CKBottleViewController.m */; };
@@ -150,6 +152,8 @@
 		CE41C3511C0594B400666823 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		CE4464BB1C16D790000F80DB /* CKFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFace.h; sourceTree = "<group>"; };
 		CE4464BC1C16D790000F80DB /* CKFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKFace.m; sourceTree = "<group>"; };
+		CE4464C11C16DDAE000F80DB /* ChatViewImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ChatViewImages.xcassets; sourceTree = "<group>"; };
+		CE4464C21C16DDAE000F80DB /* normal_face.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = normal_face.plist; sourceTree = "<group>"; };
 		CE4E8AC11C0D4114007D2C5E /* CKPersonalDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKPersonalDataTableViewController.h; sourceTree = "<group>"; };
 		CE4E8AC21C0D4114007D2C5E /* CKPersonalDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKPersonalDataTableViewController.m; sourceTree = "<group>"; };
 		CE4E8AC41C0D49A4007D2C5E /* CKUserDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUserDetailTableViewController.h; sourceTree = "<group>"; };
@@ -571,6 +575,8 @@
 				CEB1B4031C083DE10057E971 /* Mine.xcassets */,
 				CEBCA87B1C080D8300E09405 /* Friends.xcassets */,
 				CE50804F1BCE668F00074DA9 /* Images.xcassets */,
+				CE4464C11C16DDAE000F80DB /* ChatViewImages.xcassets */,
+				CE4464C21C16DDAE000F80DB /* normal_face.plist */,
 				CE5080511BCE668F00074DA9 /* LaunchScreen.xib */,
 				CE5080421BCE668F00074DA9 /* Supporting Files */,
 			);
@@ -750,6 +756,8 @@
 				CEB1B4051C083DE10057E971 /* Mine.xcassets in Resources */,
 				CE5080531BCE668F00074DA9 /* LaunchScreen.xib in Resources */,
 				CEB1B4041C083DE10057E971 /* Discover.xcassets in Resources */,
+				CE4464C41C16DDAE000F80DB /* normal_face.plist in Resources */,
+				CE4464C31C16DDAE000F80DB /* ChatViewImages.xcassets in Resources */,
 				CE38C0FD1BFED7AB0058C6B2 /* IM.storyboard in Resources */,
 				CE5080501BCE668F00074DA9 /* Images.xcassets in Resources */,
 				CEBCA87C1C080D8300E09405 /* Friends.xcassets in Resources */,
