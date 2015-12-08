@@ -289,6 +289,7 @@
 		CE38C0ED1BFED7AB0058C6B2 /* 消息 */ = {
 			isa = PBXGroup;
 			children = (
+				CE4464C01C16DD20000F80DB /* Helper */,
 				CE41C3141C058CB200666823 /* Model */,
 				CE41C30F1C058BC900666823 /* Controller */,
 				CE38C1041BFEDE420058C6B2 /* view */,
@@ -517,6 +518,13 @@
 			children = (
 			);
 			path = InputBox;
+			sourceTree = "<group>";
+		};
+		CE4464C01C16DD20000F80DB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		CE4DD57B1BD4D36D00361C78 /* 我的好友 */ = {
