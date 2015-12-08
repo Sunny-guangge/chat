@@ -38,6 +38,7 @@
 		CE41C35F1C0594B400666823 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41C34D1C0594B400666823 /* UIImageView+HighlightedWebCache.m */; };
 		CE41C3601C0594B400666823 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41C34F1C0594B400666823 /* UIImageView+WebCache.m */; };
 		CE41C3611C0594B400666823 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41C3511C0594B400666823 /* UIView+WebCacheOperation.m */; };
+		CE4464BD1C16D790000F80DB /* CKFace.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4464BC1C16D790000F80DB /* CKFace.m */; };
 		CE4E8AC31C0D4114007D2C5E /* CKPersonalDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC21C0D4114007D2C5E /* CKPersonalDataTableViewController.m */; };
 		CE4E8AC61C0D49A4007D2C5E /* CKUserDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC51C0D49A4007D2C5E /* CKUserDetailTableViewController.m */; };
 		CE4E8AC91C0D55F4007D2C5E /* CKBottleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC81C0D55F4007D2C5E /* CKBottleViewController.m */; };
@@ -147,6 +148,8 @@
 		CE41C34F1C0594B400666823 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		CE41C3501C0594B400666823 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		CE41C3511C0594B400666823 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		CE4464BB1C16D790000F80DB /* CKFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFace.h; sourceTree = "<group>"; };
+		CE4464BC1C16D790000F80DB /* CKFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKFace.m; sourceTree = "<group>"; };
 		CE4E8AC11C0D4114007D2C5E /* CKPersonalDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKPersonalDataTableViewController.h; sourceTree = "<group>"; };
 		CE4E8AC21C0D4114007D2C5E /* CKPersonalDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKPersonalDataTableViewController.m; sourceTree = "<group>"; };
 		CE4E8AC41C0D49A4007D2C5E /* CKUserDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUserDetailTableViewController.h; sourceTree = "<group>"; };
@@ -307,6 +310,8 @@
 		CE38C1041BFEDE420058C6B2 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				CE4464BF1C16D94F000F80DB /* InputBox */,
+				CE4464BE1C16D93B000F80DB /* MessageCell */,
 				CE41C30C1C058B3500666823 /* CKMessageTableViewCell.h */,
 				CE41C30D1C058B3500666823 /* CKMessageTableViewCell.m */,
 				CE8D90C61C0C582300CE6381 /* CKTableViewHeaderFooterView.h */,
@@ -352,10 +357,10 @@
 		CE41C30F1C058BC900666823 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CE41C3211C058D7E00666823 /* CKChatViewController.h */,
-				CE41C3221C058D7E00666823 /* CKChatViewController.m */,
 				CE41C3231C058D7E00666823 /* CKMessageTableViewController.h */,
 				CE41C3241C058D7E00666823 /* CKMessageTableViewController.m */,
+				CE41C3211C058D7E00666823 /* CKChatViewController.h */,
+				CE41C3221C058D7E00666823 /* CKChatViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -411,6 +416,8 @@
 			children = (
 				CE41C32D1C058FC300666823 /* CKMessage.h */,
 				CE41C32E1C058FC300666823 /* CKMessage.m */,
+				CE4464BB1C16D790000F80DB /* CKFace.h */,
+				CE4464BC1C16D790000F80DB /* CKFace.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,6 +503,20 @@
 				CE41C3511C0594B400666823 /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		CE4464BE1C16D93B000F80DB /* MessageCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MessageCell;
+			sourceTree = "<group>";
+		};
+		CE4464BF1C16D94F000F80DB /* InputBox */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InputBox;
 			sourceTree = "<group>";
 		};
 		CE4DD57B1BD4D36D00361C78 /* 我的好友 */ = {
@@ -783,6 +804,7 @@
 				CE41C30B1C0576B400666823 /* UIView+TL.m in Sources */,
 				CE41C35E1C0594B400666823 /* UIImage+WebP.m in Sources */,
 				CE41C3601C0594B400666823 /* UIImageView+WebCache.m in Sources */,
+				CE4464BD1C16D790000F80DB /* CKFace.m in Sources */,
 				CE41C3581C0594B400666823 /* SDWebImageDownloaderOperation.m in Sources */,
 				CE8D90C51C0C543B00CE6381 /* CKNewsTableViewController.m in Sources */,
 				CEB1B4081C0844930057E971 /* CKSetting.m in Sources */,
