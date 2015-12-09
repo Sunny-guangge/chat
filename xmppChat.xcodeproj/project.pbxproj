@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CE2135151C04549E00EAF2AB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2135141C04549E00EAF2AB /* MBProgressHUD.m */; };
+		CE356C531C17DE3D0046E2B6 /* CKTextMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C521C17DE3D0046E2B6 /* CKTextMessageTableViewCell.m */; };
+		CE356C561C17DE530046E2B6 /* CKImageMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C551C17DE530046E2B6 /* CKImageMessageTableViewCell.m */; };
+		CE356C591C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C581C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m */; };
+		CE356C5C1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C5B1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m */; };
 		CE38C0FD1BFED7AB0058C6B2 /* IM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE38C0F71BFED7AB0058C6B2 /* IM.storyboard */; };
 		CE38C1001BFED7DD0058C6B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE38C0FF1BFED7DD0058C6B2 /* ViewController.m */; };
 		CE41C3041C0572BB00666823 /* CKChatNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41C3011C0572BB00666823 /* CKChatNavigationViewController.m */; };
@@ -89,6 +93,14 @@
 		C8C1BBE58E857E60F752A7DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CE2135131C04549E00EAF2AB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		CE2135141C04549E00EAF2AB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		CE356C511C17DE3D0046E2B6 /* CKTextMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextMessageTableViewCell.h; sourceTree = "<group>"; };
+		CE356C521C17DE3D0046E2B6 /* CKTextMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKTextMessageTableViewCell.m; sourceTree = "<group>"; };
+		CE356C541C17DE530046E2B6 /* CKImageMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKImageMessageTableViewCell.h; sourceTree = "<group>"; };
+		CE356C551C17DE530046E2B6 /* CKImageMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKImageMessageTableViewCell.m; sourceTree = "<group>"; };
+		CE356C571C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKVoiceMessageTableViewCell.h; sourceTree = "<group>"; };
+		CE356C581C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKVoiceMessageTableViewCell.m; sourceTree = "<group>"; };
+		CE356C5A1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSystemMessageTableViewCell.h; sourceTree = "<group>"; };
+		CE356C5B1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSystemMessageTableViewCell.m; sourceTree = "<group>"; };
 		CE38C0F71BFED7AB0058C6B2 /* IM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IM.storyboard; sourceTree = "<group>"; };
 		CE38C0FE1BFED7DD0058C6B2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE38C0FF1BFED7DD0058C6B2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -513,6 +525,14 @@
 		CE4464BE1C16D93B000F80DB /* MessageCell */ = {
 			isa = PBXGroup;
 			children = (
+				CE356C511C17DE3D0046E2B6 /* CKTextMessageTableViewCell.h */,
+				CE356C521C17DE3D0046E2B6 /* CKTextMessageTableViewCell.m */,
+				CE356C541C17DE530046E2B6 /* CKImageMessageTableViewCell.h */,
+				CE356C551C17DE530046E2B6 /* CKImageMessageTableViewCell.m */,
+				CE356C571C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.h */,
+				CE356C581C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m */,
+				CE356C5A1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.h */,
+				CE356C5B1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m */,
 			);
 			path = MessageCell;
 			sourceTree = "<group>";
@@ -811,8 +831,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE356C561C17DE530046E2B6 /* CKImageMessageTableViewCell.m in Sources */,
 				CE62C1631C06E932005B4518 /* pinyin.c in Sources */,
 				CEFBFC091BCF93330062961D /* NSArray+Log.m in Sources */,
+				CE356C531C17DE3D0046E2B6 /* CKTextMessageTableViewCell.m in Sources */,
 				CE62C1591C06C052005B4518 /* CKFriendListHeaderView.m in Sources */,
 				CE4E8AC61C0D49A4007D2C5E /* CKUserDetailTableViewController.m in Sources */,
 				CE4E8AC31C0D4114007D2C5E /* CKPersonalDataTableViewController.m in Sources */,
@@ -837,6 +859,7 @@
 				CE8D90C81C0C582300CE6381 /* CKTableViewHeaderFooterView.m in Sources */,
 				CE62C1561C06BA8E005B4518 /* CKUser.m in Sources */,
 				CE41C30E1C058B3500666823 /* CKMessageTableViewCell.m in Sources */,
+				CE356C591C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m in Sources */,
 				CE41C3541C0594B400666823 /* SDImageCache.m in Sources */,
 				CE8D90C21C0C486200CE6381 /* CKSetTableViewController.m in Sources */,
 				CE41C3041C0572BB00666823 /* CKChatNavigationViewController.m in Sources */,
@@ -864,6 +887,7 @@
 				CE41C3251C058D7E00666823 /* CKChatViewController.m in Sources */,
 				CE41C35B1C0594B400666823 /* UIButton+WebCache.m in Sources */,
 				CE2135151C04549E00EAF2AB /* MBProgressHUD.m in Sources */,
+				CE356C5C1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
