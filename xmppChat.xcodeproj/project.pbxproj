@@ -12,6 +12,7 @@
 		CE356C561C17DE530046E2B6 /* CKImageMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C551C17DE530046E2B6 /* CKImageMessageTableViewCell.m */; };
 		CE356C591C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C581C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m */; };
 		CE356C5C1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C5B1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m */; };
+		CE356C5F1C17E1610046E2B6 /* CKFaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C5E1C17E1610046E2B6 /* CKFaceHelper.m */; };
 		CE38C0FD1BFED7AB0058C6B2 /* IM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE38C0F71BFED7AB0058C6B2 /* IM.storyboard */; };
 		CE38C1001BFED7DD0058C6B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE38C0FF1BFED7DD0058C6B2 /* ViewController.m */; };
 		CE41C3041C0572BB00666823 /* CKChatNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41C3011C0572BB00666823 /* CKChatNavigationViewController.m */; };
@@ -101,6 +102,8 @@
 		CE356C581C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKVoiceMessageTableViewCell.m; sourceTree = "<group>"; };
 		CE356C5A1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSystemMessageTableViewCell.h; sourceTree = "<group>"; };
 		CE356C5B1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSystemMessageTableViewCell.m; sourceTree = "<group>"; };
+		CE356C5D1C17E1610046E2B6 /* CKFaceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFaceHelper.h; sourceTree = "<group>"; };
+		CE356C5E1C17E1610046E2B6 /* CKFaceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKFaceHelper.m; sourceTree = "<group>"; };
 		CE38C0F71BFED7AB0058C6B2 /* IM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IM.storyboard; sourceTree = "<group>"; };
 		CE38C0FE1BFED7DD0058C6B2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE38C0FF1BFED7DD0058C6B2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -547,6 +550,8 @@
 		CE4464C01C16DD20000F80DB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				CE356C5D1C17E1610046E2B6 /* CKFaceHelper.h */,
+				CE356C5E1C17E1610046E2B6 /* CKFaceHelper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -851,6 +856,7 @@
 				CE4E8AC91C0D55F4007D2C5E /* CKBottleViewController.m in Sources */,
 				CE62C1661C06F52D005B4518 /* CKDataHelper.m in Sources */,
 				CE62C1621C06E932005B4518 /* ChineseString.m in Sources */,
+				CE356C5F1C17E1610046E2B6 /* CKFaceHelper.m in Sources */,
 				CE41C35F1C0594B400666823 /* UIImageView+HighlightedWebCache.m in Sources */,
 				CE5080481BCE668F00074DA9 /* AppDelegate.m in Sources */,
 				CE41C3561C0594B400666823 /* SDWebImageDecoder.m in Sources */,
