@@ -15,6 +15,7 @@
 
 
 #import "Header.h"
+#import "UIImage+CK.h"
 
 
 

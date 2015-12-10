@@ -18,9 +18,16 @@
 #define     DEFAULT_GREEN_COLOR             [UIColor colorWithRed:2.0/255 green:187.0/255  blue:0.0/255 alpha:1.0f]
 #define     DEFAULT_TEXT_GRAY_COLOR         [UIColor grayColor]
 #define     DEFAULT_LINE_GRAY_COLOR         [UIColor colorWithRed:188.0/255 green:188.0/255  blue:188.0/255 alpha:0.6f]
+#define     DEFAULT_CHATBOX_COLOR           [UIColor colorWithRed:244.0/255 green:244.0/255 blue:246.0/255 alpha:1.0f]
+
+
 
 #define WIDTH_SCREEN        [UIScreen mainScreen].bounds.size.width
 #define HEIGHT_SCREEN       [UIScreen mainScreen].bounds.size.height
+#define HEIGHT_STATUSBAR	20
+#define HEIGHT_TABBAR       49
+#define HEIGHT_NAVBAR       44
+#define HEIGHT_CHATBOXVIEW  215
 
 #pragma mark - Path
 #define     PATH_DOCUMENT                   [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
