@@ -67,6 +67,9 @@
 		CE62C1691C06F625005B4518 /* NSString+TL.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62C1681C06F625005B4518 /* NSString+TL.m */; };
 		CE89FDA91C1924140098C9D9 /* CKChatBoxMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89FDA81C1924140098C9D9 /* CKChatBoxMoreView.m */; };
 		CE89FDAC1C1925AF0098C9D9 /* CKChatBoxMoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89FDAB1C1925AF0098C9D9 /* CKChatBoxMoreItem.m */; };
+		CE89FDAF1C1938B10098C9D9 /* CKChatBoxFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89FDAE1C1938B10098C9D9 /* CKChatBoxFaceView.m */; };
+		CE89FDB21C1938F30098C9D9 /* CKChatBoxFacePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89FDB11C1938F30098C9D9 /* CKChatBoxFacePageView.m */; };
+		CE89FDB51C19390B0098C9D9 /* CKChatBoxFaceMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89FDB41C19390B0098C9D9 /* CKChatBoxFaceMenuView.m */; };
 		CE8D90B61C0BFA8D00CE6381 /* CKFounctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D90B51C0BFA8D00CE6381 /* CKFounctionCell.m */; };
 		CE8D90B91C0C2F4E00CE6381 /* CKUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D90B81C0C2F4E00CE6381 /* CKUIHelper.m */; };
 		CE8D90BC1C0C3FFE00CE6381 /* CKUserDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D90BB1C0C3FFE00CE6381 /* CKUserDetailCell.m */; };
@@ -216,6 +219,12 @@
 		CE89FDA81C1924140098C9D9 /* CKChatBoxMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatBoxMoreView.m; sourceTree = "<group>"; };
 		CE89FDAA1C1925AF0098C9D9 /* CKChatBoxMoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatBoxMoreItem.h; sourceTree = "<group>"; };
 		CE89FDAB1C1925AF0098C9D9 /* CKChatBoxMoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatBoxMoreItem.m; sourceTree = "<group>"; };
+		CE89FDAD1C1938B10098C9D9 /* CKChatBoxFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatBoxFaceView.h; sourceTree = "<group>"; };
+		CE89FDAE1C1938B10098C9D9 /* CKChatBoxFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatBoxFaceView.m; sourceTree = "<group>"; };
+		CE89FDB01C1938F30098C9D9 /* CKChatBoxFacePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatBoxFacePageView.h; sourceTree = "<group>"; };
+		CE89FDB11C1938F30098C9D9 /* CKChatBoxFacePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatBoxFacePageView.m; sourceTree = "<group>"; };
+		CE89FDB31C19390B0098C9D9 /* CKChatBoxFaceMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatBoxFaceMenuView.h; sourceTree = "<group>"; };
+		CE89FDB41C19390B0098C9D9 /* CKChatBoxFaceMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatBoxFaceMenuView.m; sourceTree = "<group>"; };
 		CE8D90B41C0BFA8D00CE6381 /* CKFounctionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFounctionCell.h; sourceTree = "<group>"; };
 		CE8D90B51C0BFA8D00CE6381 /* CKFounctionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKFounctionCell.m; sourceTree = "<group>"; };
 		CE8D90B71C0C2F4E00CE6381 /* CKUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUIHelper.h; sourceTree = "<group>"; };
@@ -564,6 +573,12 @@
 				CE89FDA81C1924140098C9D9 /* CKChatBoxMoreView.m */,
 				CE89FDAA1C1925AF0098C9D9 /* CKChatBoxMoreItem.h */,
 				CE89FDAB1C1925AF0098C9D9 /* CKChatBoxMoreItem.m */,
+				CE89FDAD1C1938B10098C9D9 /* CKChatBoxFaceView.h */,
+				CE89FDAE1C1938B10098C9D9 /* CKChatBoxFaceView.m */,
+				CE89FDB01C1938F30098C9D9 /* CKChatBoxFacePageView.h */,
+				CE89FDB11C1938F30098C9D9 /* CKChatBoxFacePageView.m */,
+				CE89FDB31C19390B0098C9D9 /* CKChatBoxFaceMenuView.h */,
+				CE89FDB41C19390B0098C9D9 /* CKChatBoxFaceMenuView.m */,
 			);
 			path = InputBox;
 			sourceTree = "<group>";
@@ -896,6 +911,7 @@
 				CE8D90C21C0C486200CE6381 /* CKSetTableViewController.m in Sources */,
 				CE41C3041C0572BB00666823 /* CKChatNavigationViewController.m in Sources */,
 				CE41C32F1C058FC300666823 /* CKMessage.m in Sources */,
+				CE89FDB21C1938F30098C9D9 /* CKChatBoxFacePageView.m in Sources */,
 				CE41C3591C0594B400666823 /* SDWebImageManager.m in Sources */,
 				CE41C3611C0594B400666823 /* UIView+WebCacheOperation.m in Sources */,
 				CEFBFC011BCF91F40062961D /* CKLoginUser.m in Sources */,
@@ -908,6 +924,7 @@
 				CEFBFC0A1BCF93330062961D /* NSString+Helper.m in Sources */,
 				CE8D90B61C0BFA8D00CE6381 /* CKFounctionCell.m in Sources */,
 				CE41C32B1C058D9C00666823 /* CKAddViewController.m in Sources */,
+				CE89FDAF1C1938B10098C9D9 /* CKChatBoxFaceView.m in Sources */,
 				CE41C3521C0594B400666823 /* MKAnnotationView+WebCache.m in Sources */,
 				CE41C3051C0572BB00666823 /* CKViewController.m in Sources */,
 				CE89FDA91C1924140098C9D9 /* CKChatBoxMoreView.m in Sources */,
@@ -915,6 +932,7 @@
 				CE41C35D1C0594B400666823 /* UIImage+MultiFormat.m in Sources */,
 				CE41C3261C058D7E00666823 /* CKMessageTableViewController.m in Sources */,
 				CE8D90B91C0C2F4E00CE6381 /* CKUIHelper.m in Sources */,
+				CE89FDB51C19390B0098C9D9 /* CKChatBoxFaceMenuView.m in Sources */,
 				CE89FDAC1C1925AF0098C9D9 /* CKChatBoxMoreItem.m in Sources */,
 				CE41C3551C0594B400666823 /* SDWebImageCompat.m in Sources */,
 				CE62C1691C06F625005B4518 /* NSString+TL.m in Sources */,
