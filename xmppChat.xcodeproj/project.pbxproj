@@ -65,6 +65,8 @@
 		CE62C1631C06E932005B4518 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = CE62C1601C06E932005B4518 /* pinyin.c */; };
 		CE62C1661C06F52D005B4518 /* CKDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62C1651C06F52D005B4518 /* CKDataHelper.m */; };
 		CE62C1691C06F625005B4518 /* NSString+TL.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62C1681C06F625005B4518 /* NSString+TL.m */; };
+		CE89FDA91C1924140098C9D9 /* CKChatBoxMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89FDA81C1924140098C9D9 /* CKChatBoxMoreView.m */; };
+		CE89FDAC1C1925AF0098C9D9 /* CKChatBoxMoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89FDAB1C1925AF0098C9D9 /* CKChatBoxMoreItem.m */; };
 		CE8D90B61C0BFA8D00CE6381 /* CKFounctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D90B51C0BFA8D00CE6381 /* CKFounctionCell.m */; };
 		CE8D90B91C0C2F4E00CE6381 /* CKUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D90B81C0C2F4E00CE6381 /* CKUIHelper.m */; };
 		CE8D90BC1C0C3FFE00CE6381 /* CKUserDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D90BB1C0C3FFE00CE6381 /* CKUserDetailCell.m */; };
@@ -210,6 +212,10 @@
 		CE62C1651C06F52D005B4518 /* CKDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKDataHelper.m; sourceTree = "<group>"; };
 		CE62C1671C06F625005B4518 /* NSString+TL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TL.h"; sourceTree = "<group>"; };
 		CE62C1681C06F625005B4518 /* NSString+TL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TL.m"; sourceTree = "<group>"; };
+		CE89FDA71C1924140098C9D9 /* CKChatBoxMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatBoxMoreView.h; sourceTree = "<group>"; };
+		CE89FDA81C1924140098C9D9 /* CKChatBoxMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatBoxMoreView.m; sourceTree = "<group>"; };
+		CE89FDAA1C1925AF0098C9D9 /* CKChatBoxMoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatBoxMoreItem.h; sourceTree = "<group>"; };
+		CE89FDAB1C1925AF0098C9D9 /* CKChatBoxMoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatBoxMoreItem.m; sourceTree = "<group>"; };
 		CE8D90B41C0BFA8D00CE6381 /* CKFounctionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFounctionCell.h; sourceTree = "<group>"; };
 		CE8D90B51C0BFA8D00CE6381 /* CKFounctionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKFounctionCell.m; sourceTree = "<group>"; };
 		CE8D90B71C0C2F4E00CE6381 /* CKUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUIHelper.h; sourceTree = "<group>"; };
@@ -554,6 +560,10 @@
 			children = (
 				CE356C631C1808DF0046E2B6 /* CKChatBox.h */,
 				CE356C641C1808DF0046E2B6 /* CKChatBox.m */,
+				CE89FDA71C1924140098C9D9 /* CKChatBoxMoreView.h */,
+				CE89FDA81C1924140098C9D9 /* CKChatBoxMoreView.m */,
+				CE89FDAA1C1925AF0098C9D9 /* CKChatBoxMoreItem.h */,
+				CE89FDAB1C1925AF0098C9D9 /* CKChatBoxMoreItem.m */,
 			);
 			path = InputBox;
 			sourceTree = "<group>";
@@ -900,10 +910,12 @@
 				CE41C32B1C058D9C00666823 /* CKAddViewController.m in Sources */,
 				CE41C3521C0594B400666823 /* MKAnnotationView+WebCache.m in Sources */,
 				CE41C3051C0572BB00666823 /* CKViewController.m in Sources */,
+				CE89FDA91C1924140098C9D9 /* CKChatBoxMoreView.m in Sources */,
 				CE41C3201C058D6100666823 /* CKPersonalViewController.m in Sources */,
 				CE41C35D1C0594B400666823 /* UIImage+MultiFormat.m in Sources */,
 				CE41C3261C058D7E00666823 /* CKMessageTableViewController.m in Sources */,
 				CE8D90B91C0C2F4E00CE6381 /* CKUIHelper.m in Sources */,
+				CE89FDAC1C1925AF0098C9D9 /* CKChatBoxMoreItem.m in Sources */,
 				CE41C3551C0594B400666823 /* SDWebImageCompat.m in Sources */,
 				CE62C1691C06F625005B4518 /* NSString+TL.m in Sources */,
 				CE41C32C1C058D9C00666823 /* CKContactViewController.m in Sources */,
