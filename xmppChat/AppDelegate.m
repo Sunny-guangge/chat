@@ -16,7 +16,7 @@
 #import "MBProgressHUD.h"
 #import "TURNSocket.h"
 
-#define CKHostName @"192.168.1.117"
+#define CKHostName @"192.168.1.11"
 
 @interface AppDelegate ()<XMPPStreamDelegate,UIAlertViewDelegate,MBProgressHUDDelegate,XMPPRosterDelegate,TURNSocketDelegate>
 {
@@ -61,14 +61,14 @@
 {
     UIStoryboard *storyboard = nil;
     
-    if (IMOrMain) {
-        
+//    if (IMOrMain) {
+    
         storyboard = [UIStoryboard storyboardWithName:@"IM" bundle:nil];
         
-    }else
-    {
-        storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    }
+//    }else
+//    {
+//        storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    }
     
 //    self.window.rootViewController = storyboard.instantiateInitialViewController;
 //    
