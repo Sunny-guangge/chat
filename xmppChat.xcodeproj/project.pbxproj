@@ -78,6 +78,8 @@
 		CEA8D8991C1A719E00B6FACE /* CKVoiceMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8D8981C1A719E00B6FACE /* CKVoiceMessageTableViewCell.m */; };
 		CEA8D89C1C1A71B900B6FACE /* CKLocationMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8D89B1C1A71B900B6FACE /* CKLocationMessageTableViewCell.m */; };
 		CEA8D89F1C1A71DA00B6FACE /* CKSystemMessageCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8D89E1C1A71DA00B6FACE /* CKSystemMessageCommonTableViewCell.m */; };
+		CEA8D8E31C1A8ECA00B6FACE /* CKChatMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8D8E21C1A8ECA00B6FACE /* CKChatMessageTableViewController.m */; };
+		CEA8D8E61C1A8EE200B6FACE /* CKChatBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8D8E51C1A8EE200B6FACE /* CKChatBoxViewController.m */; };
 		CEB1B4041C083DE10057E971 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1B4021C083DE10057E971 /* Discover.xcassets */; };
 		CEB1B4051C083DE10057E971 /* Mine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1B4031C083DE10057E971 /* Mine.xcassets */; };
 		CEB1B4081C0844930057E971 /* CKSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1B4071C0844930057E971 /* CKSetting.m */; };
@@ -243,6 +245,10 @@
 		CEA8D89B1C1A71B900B6FACE /* CKLocationMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKLocationMessageTableViewCell.m; sourceTree = "<group>"; };
 		CEA8D89D1C1A71DA00B6FACE /* CKSystemMessageCommonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSystemMessageCommonTableViewCell.h; sourceTree = "<group>"; };
 		CEA8D89E1C1A71DA00B6FACE /* CKSystemMessageCommonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSystemMessageCommonTableViewCell.m; sourceTree = "<group>"; };
+		CEA8D8E11C1A8ECA00B6FACE /* CKChatMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatMessageTableViewController.h; sourceTree = "<group>"; };
+		CEA8D8E21C1A8ECA00B6FACE /* CKChatMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatMessageTableViewController.m; sourceTree = "<group>"; };
+		CEA8D8E41C1A8EE200B6FACE /* CKChatBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatBoxViewController.h; sourceTree = "<group>"; };
+		CEA8D8E51C1A8EE200B6FACE /* CKChatBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatBoxViewController.m; sourceTree = "<group>"; };
 		CEB1B4021C083DE10057E971 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
 		CEB1B4031C083DE10057E971 /* Mine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mine.xcassets; sourceTree = "<group>"; };
 		CEB1B4061C0844930057E971 /* CKSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSetting.h; sourceTree = "<group>"; };
@@ -411,6 +417,10 @@
 				CE41C3241C058D7E00666823 /* CKMessageTableViewController.m */,
 				CE41C3211C058D7E00666823 /* CKChatViewController.h */,
 				CE41C3221C058D7E00666823 /* CKChatViewController.m */,
+				CEA8D8E11C1A8ECA00B6FACE /* CKChatMessageTableViewController.h */,
+				CEA8D8E21C1A8ECA00B6FACE /* CKChatMessageTableViewController.m */,
+				CEA8D8E41C1A8EE200B6FACE /* CKChatBoxViewController.h */,
+				CEA8D8E51C1A8EE200B6FACE /* CKChatBoxViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -913,6 +923,7 @@
 				CE5080481BCE668F00074DA9 /* AppDelegate.m in Sources */,
 				CE41C3561C0594B400666823 /* SDWebImageDecoder.m in Sources */,
 				CE41C3531C0594B400666823 /* NSData+ImageContentType.m in Sources */,
+				CEA8D8E31C1A8ECA00B6FACE /* CKChatMessageTableViewController.m in Sources */,
 				CE38C1001BFED7DD0058C6B2 /* ViewController.m in Sources */,
 				CE8D90C81C0C582300CE6381 /* CKTableViewHeaderFooterView.m in Sources */,
 				CE62C1561C06BA8E005B4518 /* CKUser.m in Sources */,
@@ -947,6 +958,7 @@
 				CE8D90B91C0C2F4E00CE6381 /* CKUIHelper.m in Sources */,
 				CE89FDB51C19390B0098C9D9 /* CKChatBoxFaceMenuView.m in Sources */,
 				CE89FDAC1C1925AF0098C9D9 /* CKChatBoxMoreItem.m in Sources */,
+				CEA8D8E61C1A8EE200B6FACE /* CKChatBoxViewController.m in Sources */,
 				CE41C3551C0594B400666823 /* SDWebImageCompat.m in Sources */,
 				CE62C1691C06F625005B4518 /* NSString+TL.m in Sources */,
 				CE41C32C1C058D9C00666823 /* CKContactViewController.m in Sources */,
