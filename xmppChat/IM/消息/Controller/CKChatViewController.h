@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CKUser.h"
 
 @interface CKChatViewController : UIViewController
+
+@property (nonatomic,strong) CKUser *user;
 
 @end

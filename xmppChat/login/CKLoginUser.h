@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CKUser.h"
 
 @interface CKLoginUser : NSObject
 + (CKLoginUser *)shareLoginUser;
@@ -17,5 +18,7 @@
 
 
 @property (nonatomic,copy,readonly) NSString *loginUserJIDName;
+
+@property (nonatomic,strong) CKUser *user;
 
 @end

@@ -321,7 +321,7 @@
 - (UIView *) topLine
 {
     if (_topline == nil) {
-        _topline = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0.5)];
+        _topline = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frameWidth, 0.5)];
         [_topline setBackgroundColor:[UIColor colorWithRed:164.0f/255 green:165.0f/255 blue:165.0f/255 alpha:1.0f]];
     }
     return _topline;

@@ -61,5 +61,15 @@ static CKLoginUser *loginUser;
     return [NSString stringWithFormat:@"%@%@",self.loginUserName,@"@teacher.local"];
 }
 
+- (CKUser *)user
+{
+    if (_user == nil) {
+        _user = [[CKUser alloc] init];
+        _user.username = @"Sunny";
+        _user.userID = @"123456";
+        _user.avatarURL = @"5.jpg";
+    }
+    return _user;
+}
 
 @end

@@ -236,7 +236,7 @@
 {
     CKChatViewController *chatVC = [[CKChatViewController alloc] init];
     
-    chatVC.navigationItem.title = @"Sunny";
+//    chatVC.navigationItem.title = @"Sunny";
     
     [self.navigationController pushViewController:chatVC animated:YES];
     

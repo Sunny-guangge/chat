@@ -46,17 +46,19 @@ static UILabel *label = nil;
     
     switch (messageType) {
         case CKMessageTypeText:
-             self.cellIndentify = @"CKTextMessageCell";
+             self.cellIndentify = @"CKTextMessageTableViewCell";
             break;
         case CKMessageTypeImage:
-            self.cellIndentify = @"CKImageMessageCell";
+            self.cellIndentify = @"CKImageMessageTableViewCell";
             break;
         case CKMessageTypeVoice:
-            self.cellIndentify = @"CKVoiceMessageCell";
+            self.cellIndentify = @"CKVoiceMessageTableViewCell";
             break;
         case CKMessageTypeSystem:
-            self.cellIndentify = @"CKSystemMessageCell";
+            self.cellIndentify = @"CKSystemMessageCommonTableViewCell";
             break;
+            case CKMessageTypeLocation:
+            self.cellIndentify = @"CKLocationMessageTableViewCell";
         default:
             break;
     }
