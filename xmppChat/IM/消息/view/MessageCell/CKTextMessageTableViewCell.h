@@ -10,4 +10,6 @@
 
 @interface CKTextMessageTableViewCell : CKMessageCommonTableViewCell
 
+@property (nonatomic,strong) UILabel *messageLabel;
+
 @end

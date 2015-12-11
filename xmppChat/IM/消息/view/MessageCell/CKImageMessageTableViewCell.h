@@ -10,4 +10,6 @@
 
 @interface CKImageMessageTableViewCell : CKMessageCommonTableViewCell
 
+@property (nonatomic,strong) UIImageView *messageImageView;
+
 @end
