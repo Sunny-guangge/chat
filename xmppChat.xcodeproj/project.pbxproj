@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE2135151C04549E00EAF2AB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2135141C04549E00EAF2AB /* MBProgressHUD.m */; };
-		CE356C531C17DE3D0046E2B6 /* CKTextMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C521C17DE3D0046E2B6 /* CKTextMessageTableViewCell.m */; };
-		CE356C561C17DE530046E2B6 /* CKImageMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C551C17DE530046E2B6 /* CKImageMessageTableViewCell.m */; };
-		CE356C591C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C581C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m */; };
-		CE356C5C1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C5B1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m */; };
 		CE356C5F1C17E1610046E2B6 /* CKFaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C5E1C17E1610046E2B6 /* CKFaceHelper.m */; };
 		CE356C621C17FD520046E2B6 /* CKChatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C611C17FD520046E2B6 /* CKChatHelper.m */; };
 		CE356C651C1808DF0046E2B6 /* CKChatBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C641C1808DF0046E2B6 /* CKChatBox.m */; };
@@ -76,6 +72,7 @@
 		CE8D90C21C0C486200CE6381 /* CKSetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D90C11C0C486200CE6381 /* CKSetTableViewController.m */; };
 		CE8D90C51C0C543B00CE6381 /* CKNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D90C41C0C543B00CE6381 /* CKNewsTableViewController.m */; };
 		CE8D90C81C0C582300CE6381 /* CKTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D90C71C0C582300CE6381 /* CKTableViewHeaderFooterView.m */; };
+		CEA8D8901C1A6F1000B6FACE /* CKMessageCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8D88F1C1A6F1000B6FACE /* CKMessageCommonTableViewCell.m */; };
 		CEB1B4041C083DE10057E971 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1B4021C083DE10057E971 /* Discover.xcassets */; };
 		CEB1B4051C083DE10057E971 /* Mine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1B4031C083DE10057E971 /* Mine.xcassets */; };
 		CEB1B4081C0844930057E971 /* CKSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1B4071C0844930057E971 /* CKSetting.m */; };
@@ -102,14 +99,6 @@
 		C8C1BBE58E857E60F752A7DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CE2135131C04549E00EAF2AB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		CE2135141C04549E00EAF2AB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		CE356C511C17DE3D0046E2B6 /* CKTextMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextMessageTableViewCell.h; sourceTree = "<group>"; };
-		CE356C521C17DE3D0046E2B6 /* CKTextMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKTextMessageTableViewCell.m; sourceTree = "<group>"; };
-		CE356C541C17DE530046E2B6 /* CKImageMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKImageMessageTableViewCell.h; sourceTree = "<group>"; };
-		CE356C551C17DE530046E2B6 /* CKImageMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKImageMessageTableViewCell.m; sourceTree = "<group>"; };
-		CE356C571C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKVoiceMessageTableViewCell.h; sourceTree = "<group>"; };
-		CE356C581C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKVoiceMessageTableViewCell.m; sourceTree = "<group>"; };
-		CE356C5A1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSystemMessageTableViewCell.h; sourceTree = "<group>"; };
-		CE356C5B1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSystemMessageTableViewCell.m; sourceTree = "<group>"; };
 		CE356C5D1C17E1610046E2B6 /* CKFaceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFaceHelper.h; sourceTree = "<group>"; };
 		CE356C5E1C17E1610046E2B6 /* CKFaceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKFaceHelper.m; sourceTree = "<group>"; };
 		CE356C601C17FD520046E2B6 /* CKChatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatHelper.h; sourceTree = "<group>"; };
@@ -237,6 +226,8 @@
 		CE8D90C41C0C543B00CE6381 /* CKNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKNewsTableViewController.m; sourceTree = "<group>"; };
 		CE8D90C61C0C582300CE6381 /* CKTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTableViewHeaderFooterView.h; sourceTree = "<group>"; };
 		CE8D90C71C0C582300CE6381 /* CKTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		CEA8D88E1C1A6F1000B6FACE /* CKMessageCommonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessageCommonTableViewCell.h; sourceTree = "<group>"; };
+		CEA8D88F1C1A6F1000B6FACE /* CKMessageCommonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMessageCommonTableViewCell.m; sourceTree = "<group>"; };
 		CEB1B4021C083DE10057E971 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
 		CEB1B4031C083DE10057E971 /* Mine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mine.xcassets; sourceTree = "<group>"; };
 		CEB1B4061C0844930057E971 /* CKSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSetting.h; sourceTree = "<group>"; };
@@ -552,14 +543,8 @@
 		CE4464BE1C16D93B000F80DB /* MessageCell */ = {
 			isa = PBXGroup;
 			children = (
-				CE356C511C17DE3D0046E2B6 /* CKTextMessageTableViewCell.h */,
-				CE356C521C17DE3D0046E2B6 /* CKTextMessageTableViewCell.m */,
-				CE356C541C17DE530046E2B6 /* CKImageMessageTableViewCell.h */,
-				CE356C551C17DE530046E2B6 /* CKImageMessageTableViewCell.m */,
-				CE356C571C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.h */,
-				CE356C581C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m */,
-				CE356C5A1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.h */,
-				CE356C5B1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m */,
+				CEA8D88E1C1A6F1000B6FACE /* CKMessageCommonTableViewCell.h */,
+				CEA8D88F1C1A6F1000B6FACE /* CKMessageCommonTableViewCell.m */,
 			);
 			path = MessageCell;
 			sourceTree = "<group>";
@@ -877,10 +862,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE356C701C18299B0046E2B6 /* UIImage+CK.m in Sources */,
-				CE356C561C17DE530046E2B6 /* CKImageMessageTableViewCell.m in Sources */,
 				CE62C1631C06E932005B4518 /* pinyin.c in Sources */,
 				CEFBFC091BCF93330062961D /* NSArray+Log.m in Sources */,
-				CE356C531C17DE3D0046E2B6 /* CKTextMessageTableViewCell.m in Sources */,
 				CE62C1591C06C052005B4518 /* CKFriendListHeaderView.m in Sources */,
 				CE4E8AC61C0D49A4007D2C5E /* CKUserDetailTableViewController.m in Sources */,
 				CE4E8AC31C0D4114007D2C5E /* CKPersonalDataTableViewController.m in Sources */,
@@ -899,6 +882,7 @@
 				CE62C1621C06E932005B4518 /* ChineseString.m in Sources */,
 				CE356C5F1C17E1610046E2B6 /* CKFaceHelper.m in Sources */,
 				CE41C35F1C0594B400666823 /* UIImageView+HighlightedWebCache.m in Sources */,
+				CEA8D8901C1A6F1000B6FACE /* CKMessageCommonTableViewCell.m in Sources */,
 				CE5080481BCE668F00074DA9 /* AppDelegate.m in Sources */,
 				CE41C3561C0594B400666823 /* SDWebImageDecoder.m in Sources */,
 				CE41C3531C0594B400666823 /* NSData+ImageContentType.m in Sources */,
@@ -906,7 +890,6 @@
 				CE8D90C81C0C582300CE6381 /* CKTableViewHeaderFooterView.m in Sources */,
 				CE62C1561C06BA8E005B4518 /* CKUser.m in Sources */,
 				CE41C30E1C058B3500666823 /* CKMessageTableViewCell.m in Sources */,
-				CE356C591C17DE6A0046E2B6 /* CKVoiceMessageTableViewCell.m in Sources */,
 				CE41C3541C0594B400666823 /* SDImageCache.m in Sources */,
 				CE8D90C21C0C486200CE6381 /* CKSetTableViewController.m in Sources */,
 				CE41C3041C0572BB00666823 /* CKChatNavigationViewController.m in Sources */,
@@ -941,7 +924,6 @@
 				CE41C35B1C0594B400666823 /* UIButton+WebCache.m in Sources */,
 				CE2135151C04549E00EAF2AB /* MBProgressHUD.m in Sources */,
 				CE356C621C17FD520046E2B6 /* CKChatHelper.m in Sources */,
-				CE356C5C1C17DE7F0046E2B6 /* CKSystemMessageTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
