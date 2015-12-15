@@ -65,7 +65,7 @@
             button.tag = i;
             [button setImage:[UIImage imageNamed:face.faceName] forState:UIControlStateNormal];
             [button setFrame:CGRectMake(x, y, w, h)];
-            [button setHidden:YES];
+            [button setHidden:NO];
             x = (index % col == 0 ? spaceX : x + w);
             y = (index % col == 0 ? y + h : y);
         }

@@ -50,7 +50,7 @@
 {
     [super setFrame:frame];
     
-    [self.scrollView setFrame:CGRectMake(0, 0, frame.size.width, frame.size.height - HEIGHT_BOTTOM_VIEW)];
+    [self.scrollView setFrame:CGRectMake(0, 0, frame.size.width, frame.size.height - HEIGHT_BOTTOM_VIEW - 18)];
     [self.pageControl setFrame:CGRectMake(0, self.scrollView.frameHeight + 3, frame.size.width, 8)];
     for (CKChatBoxFacePageView *pageView in self.facePageViewArray) {
         [self.scrollView addSubview:pageView];
@@ -160,7 +160,7 @@
         }
         else {
             CKChatBoxFacePageView *pageView3 = [self.facePageViewArray objectAtIndex:2];
-            [pageView3 showFaceGroup:_curGroup fromIndex:(int)(index - 1) count:count];
+            [pageView3 showFaceGroup:_curGroup fromIndex:(int)(index - 1) * count count:count];
             [pageView3 setOrigin:CGPointMake((index - 1) * WIDTH_SCREEN, 0)];
             [self.facePageViewArray removeObjectAtIndex:2];
             [self.facePageViewArray insertObject:pageView3 atIndex:0];
@@ -207,7 +207,11 @@
 - (NSMutableArray *)facePageViewArray
 {
     if (_facePageViewArray == nil) {
-        
+        _facePageViewArray = [[NSMutableArray alloc] initWithCapacity:3];
+        for (int i = 0; i < 3; i ++) {
+            CKChatBoxFacePageView *view = [[CKChatBoxFacePageView alloc] initWithFrame:self.scrollView.bounds];
+            [_facePageViewArray addObject:view];
+        }
     }
     return _facePageViewArray;
 }

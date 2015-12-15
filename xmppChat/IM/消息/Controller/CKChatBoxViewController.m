@@ -241,16 +241,19 @@
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *image = info[UIImagePickerControllerOriginalImage];
-    NSString *imageName = [NSString stringWithFormat:@"%lf", [[NSDate date]timeIntervalSince1970]];
+    NSString *imageName = [NSString stringWithFormat:@"%lf.png", [[NSDate date]timeIntervalSince1970]];
     NSString *imagePath = [NSString stringWithFormat:@"%@/%@", PATH_CHATREC_IMAGE, imageName];
     NSData *imageData = (UIImagePNGRepresentation(image) == nil ? UIImageJPEGRepresentation(image, 1) : UIImagePNGRepresentation(image));
-    [[NSFileManager defaultManager] createFileAtPath:imagePath contents:imageData attributes:nil];
+//    [[NSFileManager defaultManager] createFileAtPath:imagePath contents:imageData attributes:nil];
+    
+    [imageData writeToFile:imagePath atomically:YES];
     
     CKMessage *message = [[CKMessage alloc] init];
     message.messageType = CKMessageTypeImage;
     message.ownerTyper = CKMessageOwnerTypeSelf;
     message.date = [NSDate date];
-    message.imagePath = imageName;
+    message.message_Name = imageName;
+    message.imagePath = imagePath;
     if (_delegate && [_delegate respondsToSelector:@selector(chatBoxViewController:sendMessage:)]) {
         [_delegate chatBoxViewController:self sendMessage:message];
     }
@@ -307,7 +310,6 @@
     if (_chatBoxMoreView == nil) {
         _chatBoxMoreView = [[CKChatBoxMoreView alloc] initWithFrame:CGRectMake(0, HEIGHT_TABBAR, WIDTH_SCREEN, HEIGHT_CHATBOXVIEW)];
         [_chatBoxMoreView setDelegate:self];
-        
         CKChatBoxMoreItem *photosItem = [CKChatBoxMoreItem createChatBoxMoreItemWithTitle:@"照片"
                                                                                 imageName:@"sharemore_pic"];
         CKChatBoxMoreItem *takePictureItem = [CKChatBoxMoreItem createChatBoxMoreItemWithTitle:@"拍摄"

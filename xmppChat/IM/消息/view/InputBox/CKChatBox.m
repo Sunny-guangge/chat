@@ -38,12 +38,12 @@
         _curHeight = frame.size.height;
         
         [self setBackgroundColor:DEFAULT_CHATBOX_COLOR];
-        [self addSubview:self.topline];
         [self addSubview:self.voiceButton];
         [self addSubview:self.textView];
         [self addSubview:self.faceButton];
         [self addSubview:self.moreButton];
         [self addSubview:self.talkButton];
+        [self addSubview:self.topline];
         self.status = CKChatBoxStatusNothing;
         
     }

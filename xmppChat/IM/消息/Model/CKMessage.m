@@ -8,6 +8,7 @@
 
 #import "CKMessage.h"
 #import "Header.h"
+#import "CKChatHelper.h"
 
 static UILabel *label = nil;
 
@@ -34,7 +35,7 @@ static UILabel *label = nil;
     _text = text;
     
     if (text.length > 0) {
-//        _attrText = [];
+        _attrText = [CKChatHelper formatMessageStrign:text];
     }
     
 }
@@ -73,8 +74,11 @@ static UILabel *label = nil;
             break;
         case CKMessageTypeImage:
         {
-            NSString *path = [NSString stringWithFormat:@"%@%@",PATH_CHATREC_IMAGE,self.imagePath];
-            _image = [UIImage imageNamed:path];
+//            NSString *path = [NSString stringWithFormat:@"%@%@",PATH_CHATREC_IMAGE,self.imagePath];
+            
+            UIImage *image = [UIImage imageWithContentsOfFile:self.imagePath];
+            
+            _image = [UIImage imageNamed:self.imagePath];
             if (_image != nil) {
                 _messageSize = (_image.size.width > WIDTH_SCREEN * 0.5 ? CGSizeMake(WIDTH_SCREEN * 0.5, WIDTH_SCREEN * 0.5 / _image.size.width * _image.size.height) : _image.size);
                 _messageSize = (_messageSize.height > 60 ? (_messageSize.height < 200 ? _messageSize : CGSizeMake(_messageSize.width, 200)) : CGSizeMake(60 / _messageSize.height * _messageSize.width, 60));
@@ -103,7 +107,7 @@ static UILabel *label = nil;
             return self.messageSize.height + 40 > 60 ? self.messageSize.height + 40 : 60;
             break;
         case CKMessageTypeImage:
-            return self.messageSize.height + 20;
+            return self.messageSize.height + 60;
             break;
         default:
             break;

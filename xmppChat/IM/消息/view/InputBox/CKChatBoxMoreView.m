@@ -35,6 +35,14 @@
     return self;
 }
 
+- (void)setFrame:(CGRect)frame
+{
+    [super setFrame:frame];
+    
+    [self.scrollView setFrame:CGRectMake(0, 0.5, frame.size.width, frame.size.height - 18)];
+    [self.pageControll setFrame:CGRectMake(0, self.frameHeight - 18, frame.size.width, 8)];
+}
+
 - (void)setItems:(NSMutableArray *)items
 {
     _items = items;
@@ -44,7 +52,7 @@
     
     float w = self.frameWidth * 20 / 21 / 4 * 0.8;
     float space = w / 4;
-    float h = (self.frameWidth - 20 - space * 2) / 2;
+    float h = (self.frameHeight - 20 - space * 2) / 2;
     
     float x = space, y = space;
     int i = 0, page = 0;
@@ -52,7 +60,6 @@
     for (CKChatBoxMoreItem *item in items) {
         
         [self.scrollView addSubview:item];
-        
         [item setFrame:CGRectMake(x, y, w, h)];
         [item setTag:i];
         [item addTarget:self action:@selector(didSelectedItem:) forControlEvents:UIControlEventTouchUpInside];

@@ -83,19 +83,24 @@
     return message.cellHeight;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.view endEditing:YES];
+}
+
 - (NSMutableArray *)data
 {
     if (_data == nil) {
-        
+        _data = [[NSMutableArray alloc] init];
     }
     return _data;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+//    [];
     [super touchesBegan:touches withEvent:event];
     
-//    [];
     
     if (_delegate && [_delegate respondsToSelector:@selector(didTapMessageView:)]) {
         [_delegate didTapMessageView:self];
