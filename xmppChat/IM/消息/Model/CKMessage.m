@@ -76,9 +76,12 @@ static UILabel *label = nil;
         {
 //            NSString *path = [NSString stringWithFormat:@"%@%@",PATH_CHATREC_IMAGE,self.imagePath];
             
-            UIImage *image = [UIImage imageWithContentsOfFile:self.imagePath];
+//            UIImage *image = [UIImage imageWithContentsOfFile:self.imagePath];
             
-            _image = [UIImage imageNamed:self.imagePath];
+            UIImage *image = [[UIImage alloc] initWithContentsOfFile:self.imagePath];
+            
+            
+            _image = image;
             if (_image != nil) {
                 _messageSize = (_image.size.width > WIDTH_SCREEN * 0.5 ? CGSizeMake(WIDTH_SCREEN * 0.5, WIDTH_SCREEN * 0.5 / _image.size.width * _image.size.height) : _image.size);
                 _messageSize = (_messageSize.height > 60 ? (_messageSize.height < 200 ? _messageSize : CGSizeMake(_messageSize.width, 200)) : CGSizeMake(60 / _messageSize.height * _messageSize.width, 60));

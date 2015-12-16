@@ -23,10 +23,15 @@
 @end
 
 @implementation CKChatBoxViewController
+{
+    NSInteger i;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    i = 1;
     
     [self.view addSubview:self.chatBox];
     
@@ -241,11 +246,11 @@
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *image = info[UIImagePickerControllerOriginalImage];
-    NSString *imageName = [NSString stringWithFormat:@"%lf.png", [[NSDate date]timeIntervalSince1970]];
-    NSString *imagePath = [NSString stringWithFormat:@"%@/%@", PATH_CHATREC_IMAGE, imageName];
-    NSData *imageData = (UIImagePNGRepresentation(image) == nil ? UIImageJPEGRepresentation(image, 1) : UIImagePNGRepresentation(image));
-//    [[NSFileManager defaultManager] createFileAtPath:imagePath contents:imageData attributes:nil];
-    
+//    NSString *imageName = [NSString stringWithFormat:@"%lf.png", [[NSDate date]timeIntervalSince1970]];
+    NSString *imageName = [NSString stringWithFormat:@"chat%lu.png",i];
+    NSString *imagePath = [NSString stringWithFormat:@"%@/%@", PATH_DOCUMENT, imageName];
+//    NSData *imageData = (UIImagePNGRepresentation(image) == nil ? UIImageJPEGRepresentation(image, 1) : UIImagePNGRepresentation(image));
+    NSData *imageData = UIImagePNGRepresentation(image);
     [imageData writeToFile:imagePath atomically:YES];
     
     CKMessage *message = [[CKMessage alloc] init];
