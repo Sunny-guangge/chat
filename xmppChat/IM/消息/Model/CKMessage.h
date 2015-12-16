@@ -34,6 +34,7 @@ typedef NS_ENUM(NSInteger,CKMessageType) {
     CKMessageTypeFile,     //文件
     CKMessageTypeLocation, //位置
     CKMessageTypeShake,    //抖动
+    CKMessageTypeRedPacket, //红包
 };
 
 /**

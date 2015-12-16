@@ -119,7 +119,7 @@
         [_sendButton setTitle:@"发送" forState:UIControlStateNormal];
         [_sendButton.titleLabel setFont:[UIFont systemFontOfSize:15.0f]];
         [_sendButton setBackgroundColor:[UIColor colorWithRed:0.1 green:0.4 blue:0.8 alpha:1.0]];
-        [_sendButton addTarget:self action:@selector(didClickSendButton:) forControlEvents:UIControlEventTouchDown];;
+        [_sendButton addTarget:self action:@selector(didClickSendButton:) forControlEvents:UIControlEventTouchDown];
     }
     
     return _sendButton;

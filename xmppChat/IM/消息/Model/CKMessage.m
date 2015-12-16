@@ -96,6 +96,9 @@ static UILabel *label = nil;
             break;
         case CKMessageTypeSystem:
             break;
+        case CKMessageTypeRedPacket:
+//            _messageSize = CGSizeMake(WIDTH_SCREEN - , <#CGFloat height#>)
+            break;
         default:
             break;
     }
