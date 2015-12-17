@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1D1F2F1C226ADA004DC2D4 /* CKShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D1F2E1C226ADA004DC2D4 /* CKShakeViewController.m */; };
+		CE1D1F321C22713A004DC2D4 /* CKShakeMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D1F311C22713A004DC2D4 /* CKShakeMenuButton.m */; };
+		CE1D1F351C229BCB004DC2D4 /* CKBottleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D1F341C229BCB004DC2D4 /* CKBottleViewController.m */; };
 		CE2135151C04549E00EAF2AB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2135141C04549E00EAF2AB /* MBProgressHUD.m */; };
 		CE356C5F1C17E1610046E2B6 /* CKFaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C5E1C17E1610046E2B6 /* CKFaceHelper.m */; };
 		CE356C621C17FD520046E2B6 /* CKChatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C611C17FD520046E2B6 /* CKChatHelper.m */; };
@@ -47,7 +50,6 @@
 		CE4464C41C16DDAE000F80DB /* normal_face.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE4464C21C16DDAE000F80DB /* normal_face.plist */; };
 		CE4E8AC31C0D4114007D2C5E /* CKPersonalDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC21C0D4114007D2C5E /* CKPersonalDataTableViewController.m */; };
 		CE4E8AC61C0D49A4007D2C5E /* CKUserDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC51C0D49A4007D2C5E /* CKUserDetailTableViewController.m */; };
-		CE4E8AC91C0D55F4007D2C5E /* CKBottleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC81C0D55F4007D2C5E /* CKBottleViewController.m */; };
 		CE5080451BCE668F00074DA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5080441BCE668F00074DA9 /* main.m */; };
 		CE5080481BCE668F00074DA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5080471BCE668F00074DA9 /* AppDelegate.m */; };
 		CE50804E1BCE668F00074DA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE50804C1BCE668F00074DA9 /* Main.storyboard */; };
@@ -104,6 +106,12 @@
 		0FF35BBD36321DC6D9443E88 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BB6A68ACE8683A54B85B2F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C8C1BBE58E857E60F752A7DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CE1D1F2D1C226ADA004DC2D4 /* CKShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKShakeViewController.h; sourceTree = "<group>"; };
+		CE1D1F2E1C226ADA004DC2D4 /* CKShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKShakeViewController.m; sourceTree = "<group>"; };
+		CE1D1F301C22713A004DC2D4 /* CKShakeMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKShakeMenuButton.h; sourceTree = "<group>"; };
+		CE1D1F311C22713A004DC2D4 /* CKShakeMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKShakeMenuButton.m; sourceTree = "<group>"; };
+		CE1D1F331C229BCB004DC2D4 /* CKBottleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKBottleViewController.h; sourceTree = "<group>"; };
+		CE1D1F341C229BCB004DC2D4 /* CKBottleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKBottleViewController.m; sourceTree = "<group>"; };
 		CE2135131C04549E00EAF2AB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		CE2135141C04549E00EAF2AB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		CE356C5D1C17E1610046E2B6 /* CKFaceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFaceHelper.h; sourceTree = "<group>"; };
@@ -183,8 +191,6 @@
 		CE4E8AC21C0D4114007D2C5E /* CKPersonalDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKPersonalDataTableViewController.m; sourceTree = "<group>"; };
 		CE4E8AC41C0D49A4007D2C5E /* CKUserDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUserDetailTableViewController.h; sourceTree = "<group>"; };
 		CE4E8AC51C0D49A4007D2C5E /* CKUserDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKUserDetailTableViewController.m; sourceTree = "<group>"; };
-		CE4E8AC71C0D55F4007D2C5E /* CKBottleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKBottleViewController.h; sourceTree = "<group>"; };
-		CE4E8AC81C0D55F4007D2C5E /* CKBottleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKBottleViewController.m; sourceTree = "<group>"; };
 		CE4E8AD01C0D8F66007D2C5E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CE50803F1BCE668F00074DA9 /* xmppChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5080431BCE668F00074DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -458,8 +464,10 @@
 			children = (
 				CE41C31B1C058D4400666823 /* CKDiscoverTableViewController.h */,
 				CE41C31C1C058D4400666823 /* CKDiscoverTableViewController.m */,
-				CE4E8AC71C0D55F4007D2C5E /* CKBottleViewController.h */,
-				CE4E8AC81C0D55F4007D2C5E /* CKBottleViewController.m */,
+				CE1D1F2D1C226ADA004DC2D4 /* CKShakeViewController.h */,
+				CE1D1F2E1C226ADA004DC2D4 /* CKShakeViewController.m */,
+				CE1D1F331C229BCB004DC2D4 /* CKBottleViewController.h */,
+				CE1D1F341C229BCB004DC2D4 /* CKBottleViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -499,6 +507,8 @@
 		CE41C3181C058CEA00666823 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE1D1F301C22713A004DC2D4 /* CKShakeMenuButton.h */,
+				CE1D1F311C22713A004DC2D4 /* CKShakeMenuButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -896,6 +906,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1D1F2F1C226ADA004DC2D4 /* CKShakeViewController.m in Sources */,
 				CEA8D8991C1A719E00B6FACE /* CKVoiceMessageTableViewCell.m in Sources */,
 				CE356C701C18299B0046E2B6 /* UIImage+CK.m in Sources */,
 				CE62C1631C06E932005B4518 /* pinyin.c in Sources */,
@@ -913,7 +924,6 @@
 				CEB1B4081C0844930057E971 /* CKSetting.m in Sources */,
 				CE8D90BC1C0C3FFE00CE6381 /* CKUserDetailCell.m in Sources */,
 				CE41C31D1C058D4400666823 /* CKDiscoverTableViewController.m in Sources */,
-				CE4E8AC91C0D55F4007D2C5E /* CKBottleViewController.m in Sources */,
 				CE62C1661C06F52D005B4518 /* CKDataHelper.m in Sources */,
 				CE62C1621C06E932005B4518 /* ChineseString.m in Sources */,
 				CEA8D89C1C1A71B900B6FACE /* CKLocationMessageTableViewCell.m in Sources */,
@@ -954,12 +964,14 @@
 				CEA8D8931C1A70C900B6FACE /* CKTextMessageTableViewCell.m in Sources */,
 				CE41C3201C058D6100666823 /* CKPersonalViewController.m in Sources */,
 				CE41C35D1C0594B400666823 /* UIImage+MultiFormat.m in Sources */,
+				CE1D1F351C229BCB004DC2D4 /* CKBottleViewController.m in Sources */,
 				CE41C3261C058D7E00666823 /* CKMessageTableViewController.m in Sources */,
 				CE8D90B91C0C2F4E00CE6381 /* CKUIHelper.m in Sources */,
 				CE89FDB51C19390B0098C9D9 /* CKChatBoxFaceMenuView.m in Sources */,
 				CE89FDAC1C1925AF0098C9D9 /* CKChatBoxMoreItem.m in Sources */,
 				CEA8D8E61C1A8EE200B6FACE /* CKChatBoxViewController.m in Sources */,
 				CE41C3551C0594B400666823 /* SDWebImageCompat.m in Sources */,
+				CE1D1F321C22713A004DC2D4 /* CKShakeMenuButton.m in Sources */,
 				CE62C1691C06F625005B4518 /* NSString+TL.m in Sources */,
 				CE41C32C1C058D9C00666823 /* CKContactViewController.m in Sources */,
 				CE41C3251C058D7E00666823 /* CKChatViewController.m in Sources */,

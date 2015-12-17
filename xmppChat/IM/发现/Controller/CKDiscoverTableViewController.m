@@ -10,6 +10,7 @@
 #import "CKFounctionCell.h"
 #import "CKUIHelper.h"
 #import "CKSetting.h"
+#import "CKShakeViewController.h"
 
 @interface CKDiscoverTableViewController ()
 
@@ -94,6 +95,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 1 && indexPath.row == 1) {
+        
+        CKShakeViewController *shakeVC = [[CKShakeViewController alloc]init];
+        
+        [self.navigationController pushViewController:shakeVC animated:YES];
+        
+    }
+    
      [tableView deselectRowAtIndexPath:indexPath animated:NO]; 
 }
 

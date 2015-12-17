@@ -70,7 +70,7 @@
 //        storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 //    }
     
-//    self.window.rootViewController = storyboard.instantiateInitialViewController;
+//    self.window.rootViewController = storyboard.；;
 //    
 //    if (!self.window.isKeyWindow) {
 //        [self.window makeKeyAndVisible];

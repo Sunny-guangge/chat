@@ -1,5 +1,5 @@
 //
-//  CKBottleViewController.h
+//  CKShakeViewController.h
 //  xmppChat
 //
 //  Created by user on 15/12/17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CKBottleViewController : UIViewController
+@interface CKShakeViewController : UIViewController
 
 @end
