@@ -11,6 +11,7 @@
 #import "CKUIHelper.h"
 #import "CKSetting.h"
 #import "CKShakeViewController.h"
+#import "CKShopViewController.h"
 
 @interface CKDiscoverTableViewController ()
 
@@ -100,6 +101,14 @@
         CKShakeViewController *shakeVC = [[CKShakeViewController alloc]init];
         
         [self.navigationController pushViewController:shakeVC animated:YES];
+        
+    }
+    
+    if (indexPath.section == 3 && indexPath.row == 0) {
+        
+        CKShopViewController *shopVC = [[CKShopViewController alloc] init];
+        
+        [self.navigationController pushViewController:shopVC animated:YES];
         
     }
     

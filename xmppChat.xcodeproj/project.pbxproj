@@ -10,6 +10,7 @@
 		CE1D1F2F1C226ADA004DC2D4 /* CKShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D1F2E1C226ADA004DC2D4 /* CKShakeViewController.m */; };
 		CE1D1F321C22713A004DC2D4 /* CKShakeMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D1F311C22713A004DC2D4 /* CKShakeMenuButton.m */; };
 		CE1D1F351C229BCB004DC2D4 /* CKBottleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D1F341C229BCB004DC2D4 /* CKBottleViewController.m */; };
+		CE1D1F381C229D7A004DC2D4 /* CKShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1D1F371C229D7A004DC2D4 /* CKShopViewController.m */; };
 		CE2135151C04549E00EAF2AB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2135141C04549E00EAF2AB /* MBProgressHUD.m */; };
 		CE356C5F1C17E1610046E2B6 /* CKFaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C5E1C17E1610046E2B6 /* CKFaceHelper.m */; };
 		CE356C621C17FD520046E2B6 /* CKChatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C611C17FD520046E2B6 /* CKChatHelper.m */; };
@@ -112,6 +113,8 @@
 		CE1D1F311C22713A004DC2D4 /* CKShakeMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKShakeMenuButton.m; sourceTree = "<group>"; };
 		CE1D1F331C229BCB004DC2D4 /* CKBottleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKBottleViewController.h; sourceTree = "<group>"; };
 		CE1D1F341C229BCB004DC2D4 /* CKBottleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKBottleViewController.m; sourceTree = "<group>"; };
+		CE1D1F361C229D7A004DC2D4 /* CKShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKShopViewController.h; sourceTree = "<group>"; };
+		CE1D1F371C229D7A004DC2D4 /* CKShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKShopViewController.m; sourceTree = "<group>"; };
 		CE2135131C04549E00EAF2AB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		CE2135141C04549E00EAF2AB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		CE356C5D1C17E1610046E2B6 /* CKFaceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFaceHelper.h; sourceTree = "<group>"; };
@@ -468,6 +471,8 @@
 				CE1D1F2E1C226ADA004DC2D4 /* CKShakeViewController.m */,
 				CE1D1F331C229BCB004DC2D4 /* CKBottleViewController.h */,
 				CE1D1F341C229BCB004DC2D4 /* CKBottleViewController.m */,
+				CE1D1F361C229D7A004DC2D4 /* CKShopViewController.h */,
+				CE1D1F371C229D7A004DC2D4 /* CKShopViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -935,6 +940,7 @@
 				CE41C3531C0594B400666823 /* NSData+ImageContentType.m in Sources */,
 				CEA8D8E31C1A8ECA00B6FACE /* CKChatMessageTableViewController.m in Sources */,
 				CE38C1001BFED7DD0058C6B2 /* ViewController.m in Sources */,
+				CE1D1F381C229D7A004DC2D4 /* CKShopViewController.m in Sources */,
 				CE8D90C81C0C582300CE6381 /* CKTableViewHeaderFooterView.m in Sources */,
 				CE62C1561C06BA8E005B4518 /* CKUser.m in Sources */,
 				CE41C30E1C058B3500666823 /* CKMessageTableViewCell.m in Sources */,
