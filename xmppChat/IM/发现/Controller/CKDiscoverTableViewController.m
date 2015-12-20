@@ -12,6 +12,7 @@
 #import "CKSetting.h"
 #import "CKShakeViewController.h"
 #import "CKShopViewController.h"
+#import "CKMomentsViewController.h"
 
 @interface CKDiscoverTableViewController ()
 
@@ -96,6 +97,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        
+        CKMomentsViewController *momentVC = [[CKMomentsViewController alloc] init];
+        
+        [self.navigationController pushViewController:momentVC animated:YES];
+        
+    }
+    
     if (indexPath.section == 1 && indexPath.row == 1) {
         
         CKShakeViewController *shakeVC = [[CKShakeViewController alloc]init];

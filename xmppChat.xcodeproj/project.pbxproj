@@ -18,6 +18,9 @@
 		CE356C701C18299B0046E2B6 /* UIImage+CK.m in Sources */ = {isa = PBXBuildFile; fileRef = CE356C6F1C18299B0046E2B6 /* UIImage+CK.m */; };
 		CE38C0FD1BFED7AB0058C6B2 /* IM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE38C0F71BFED7AB0058C6B2 /* IM.storyboard */; };
 		CE38C1001BFED7DD0058C6B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE38C0FF1BFED7DD0058C6B2 /* ViewController.m */; };
+		CE3BC4C21C23BF9000A324A7 /* CKMomentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BC4C11C23BF9000A324A7 /* CKMomentsViewController.m */; };
+		CE3BC4C51C23C46B00A324A7 /* CKMomentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BC4C41C23C46B00A324A7 /* CKMomentTableViewCell.m */; };
+		CE3BC4C81C240E0E00A324A7 /* CKMomentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BC4C71C240E0E00A324A7 /* CKMomentHeaderView.m */; };
 		CE41C3041C0572BB00666823 /* CKChatNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41C3011C0572BB00666823 /* CKChatNavigationViewController.m */; };
 		CE41C3051C0572BB00666823 /* CKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41C3031C0572BB00666823 /* CKViewController.m */; };
 		CE41C3081C0572E700666823 /* CKCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41C3071C0572E700666823 /* CKCommonTableViewCell.m */; };
@@ -129,6 +132,12 @@
 		CE38C0FE1BFED7DD0058C6B2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE38C0FF1BFED7DD0058C6B2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE38C10D1BFF17570058C6B2 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		CE3BC4C01C23BF9000A324A7 /* CKMomentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMomentsViewController.h; sourceTree = "<group>"; };
+		CE3BC4C11C23BF9000A324A7 /* CKMomentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMomentsViewController.m; sourceTree = "<group>"; };
+		CE3BC4C31C23C46B00A324A7 /* CKMomentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMomentTableViewCell.h; sourceTree = "<group>"; };
+		CE3BC4C41C23C46B00A324A7 /* CKMomentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMomentTableViewCell.m; sourceTree = "<group>"; };
+		CE3BC4C61C240E0E00A324A7 /* CKMomentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMomentHeaderView.h; sourceTree = "<group>"; };
+		CE3BC4C71C240E0E00A324A7 /* CKMomentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMomentHeaderView.m; sourceTree = "<group>"; };
 		CE41C3001C0572BB00666823 /* CKChatNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatNavigationViewController.h; sourceTree = "<group>"; };
 		CE41C3011C0572BB00666823 /* CKChatNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatNavigationViewController.m; sourceTree = "<group>"; };
 		CE41C3021C0572BB00666823 /* CKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKViewController.h; sourceTree = "<group>"; };
@@ -473,6 +482,8 @@
 				CE1D1F341C229BCB004DC2D4 /* CKBottleViewController.m */,
 				CE1D1F361C229D7A004DC2D4 /* CKShopViewController.h */,
 				CE1D1F371C229D7A004DC2D4 /* CKShopViewController.m */,
+				CE3BC4C01C23BF9000A324A7 /* CKMomentsViewController.h */,
+				CE3BC4C11C23BF9000A324A7 /* CKMomentsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -514,6 +525,10 @@
 			children = (
 				CE1D1F301C22713A004DC2D4 /* CKShakeMenuButton.h */,
 				CE1D1F311C22713A004DC2D4 /* CKShakeMenuButton.m */,
+				CE3BC4C31C23C46B00A324A7 /* CKMomentTableViewCell.h */,
+				CE3BC4C41C23C46B00A324A7 /* CKMomentTableViewCell.m */,
+				CE3BC4C61C240E0E00A324A7 /* CKMomentHeaderView.h */,
+				CE3BC4C71C240E0E00A324A7 /* CKMomentHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -967,6 +982,8 @@
 				CE41C3521C0594B400666823 /* MKAnnotationView+WebCache.m in Sources */,
 				CE41C3051C0572BB00666823 /* CKViewController.m in Sources */,
 				CE89FDA91C1924140098C9D9 /* CKChatBoxMoreView.m in Sources */,
+				CE3BC4C21C23BF9000A324A7 /* CKMomentsViewController.m in Sources */,
+				CE3BC4C81C240E0E00A324A7 /* CKMomentHeaderView.m in Sources */,
 				CEA8D8931C1A70C900B6FACE /* CKTextMessageTableViewCell.m in Sources */,
 				CE41C3201C058D6100666823 /* CKPersonalViewController.m in Sources */,
 				CE41C35D1C0594B400666823 /* UIImage+MultiFormat.m in Sources */,
@@ -977,6 +994,7 @@
 				CE89FDAC1C1925AF0098C9D9 /* CKChatBoxMoreItem.m in Sources */,
 				CEA8D8E61C1A8EE200B6FACE /* CKChatBoxViewController.m in Sources */,
 				CE41C3551C0594B400666823 /* SDWebImageCompat.m in Sources */,
+				CE3BC4C51C23C46B00A324A7 /* CKMomentTableViewCell.m in Sources */,
 				CE1D1F321C22713A004DC2D4 /* CKShakeMenuButton.m in Sources */,
 				CE62C1691C06F625005B4518 /* NSString+TL.m in Sources */,
 				CE41C32C1C058D9C00666823 /* CKContactViewController.m in Sources */,
