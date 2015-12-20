@@ -55,7 +55,17 @@
 
 @implementation AppDelegate
 
-
+#pragma mark - 3DTouch
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler{
+    //判断先前我们设置的唯一标识
+    if([shortcutItem.type isEqualToString:@"com.chuangke.xmppChat"]){
+        NSArray *arr = @[@"hello 3D Touch"];
+        UIActivityViewController *vc = [[UIActivityViewController alloc]initWithActivityItems:arr applicationActivities:nil];
+        //设置当前的VC 为rootVC
+        [self.window.rootViewController presentViewController:vc animated:YES completion:^{
+        }];
+    }
+}
 #pragma mark - 切换storyboard
 - (void)changeStoryboardWithBool:(BOOL)IMOrMain
 {
@@ -112,6 +122,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     //需要添加在没有网络的情况下不能链接
+    
+    
     
     //设置XMPPStream
     [self setupstream];
