@@ -9,10 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "CKUser.h"
 
+@protocol CKMomentHeaderViewDelegate <NSObject>
+
+- (void)clickMomentHeaderBackImage;
+
+- (void)clickMomentHeaderAvatar;
+
+@end
+
 @interface CKMomentHeaderView : UIView
 
 @property (nonatomic,strong) CKUser *user;
 
 @property (nonatomic,strong) UIImage *image;
+
+@property (nonatomic,weak) id<CKMomentHeaderViewDelegate>delegate;
 
 @end

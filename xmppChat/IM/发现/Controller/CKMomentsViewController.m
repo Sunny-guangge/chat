@@ -8,8 +8,9 @@
 
 #import "CKMomentsViewController.h"
 #import "CKMomentTableViewCell.h"
+#import "CKMomentHeaderView.h"
 
-@interface CKMomentsViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
+@interface CKMomentsViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate,CKMomentHeaderViewDelegate>
 
 @property (nonatomic,strong) UIBarButtonItem *rightBarButtonItem;
 
@@ -28,10 +29,20 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.momentTableView];
+
     
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH_SCREEN, WIDTH_SCREEN)];
-    headerView.backgroundColor = [UIColor redColor];
+    CKMomentHeaderView *headerView = [[CKMomentHeaderView alloc] initWithFrame:CGRectMake(0, 0, WIDTH_SCREEN, WIDTH_SCREEN + 30)];
+    headerView.contentMode = UIViewContentModeScaleAspectFill;
+    headerView.delegate = self;
+    CKUser *user = [[CKUser alloc] init];
+    user.username = @"Sunny";
+    user.avatarURL = @"5.jpg";
+    headerView.user = user;
+    
+    UIImage *image = [UIImage imageNamed:@"6.jpg"];
+    headerView.image = image;
     [self.momentTableView setTableHeaderView:headerView];
+    
     
     [self.momentTableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 }
@@ -62,6 +73,7 @@
         _momentTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, -64, WIDTH_SCREEN, HEIGHT_SCREEN + 64)];
         _momentTableView.delegate = self;
         _momentTableView.dataSource = self;
+        _momentTableView.backgroundColor = [UIColor colorWithRed:33 /255 green:36 / 255 blue:39 / 255 alpha:1.0f];
         
     }
     return _momentTableView;
@@ -111,6 +123,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark CKMomentHeaderViewDelegate
+- (void)clickMomentHeaderBackImage
+{
+    //点击用户封面图，切换背景图片
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"确认切换背景图片？" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:@"确认", nil];
+    [alertView show];
+}
+
+- (void)clickMomentHeaderAvatar
+{
+    //点击进入到用户的个人页面
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"进入到个人主页？" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:@"确认", nil];
+    [alertView show];
 }
 
 @end

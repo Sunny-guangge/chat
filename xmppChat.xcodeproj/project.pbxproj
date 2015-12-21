@@ -60,6 +60,7 @@
 		CE5080501BCE668F00074DA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE50804F1BCE668F00074DA9 /* Images.xcassets */; };
 		CE5080531BCE668F00074DA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5080511BCE668F00074DA9 /* LaunchScreen.xib */; };
 		CE50805F1BCE668F00074DA9 /* xmppChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50805E1BCE668F00074DA9 /* xmppChatTests.m */; };
+		CE57F5191C27958E000E5BB3 /* CKSendMomentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE57F5181C27958E000E5BB3 /* CKSendMomentViewController.m */; };
 		CE62C1561C06BA8E005B4518 /* CKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62C1551C06BA8E005B4518 /* CKUser.m */; };
 		CE62C1591C06C052005B4518 /* CKFriendListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62C1581C06C052005B4518 /* CKFriendListHeaderView.m */; };
 		CE62C15C1C06C39A005B4518 /* CKMyFriendListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62C15B1C06C39A005B4518 /* CKMyFriendListTableViewCell.m */; };
@@ -215,6 +216,8 @@
 		CE5080581BCE668F00074DA9 /* xmppChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xmppChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE50805D1BCE668F00074DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE50805E1BCE668F00074DA9 /* xmppChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xmppChatTests.m; sourceTree = "<group>"; };
+		CE57F5171C27958E000E5BB3 /* CKSendMomentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSendMomentViewController.h; sourceTree = "<group>"; };
+		CE57F5181C27958E000E5BB3 /* CKSendMomentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSendMomentViewController.m; sourceTree = "<group>"; };
 		CE62C1541C06BA8E005B4518 /* CKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUser.h; sourceTree = "<group>"; };
 		CE62C1551C06BA8E005B4518 /* CKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKUser.m; sourceTree = "<group>"; };
 		CE62C1571C06C052005B4518 /* CKFriendListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFriendListHeaderView.h; sourceTree = "<group>"; };
@@ -484,6 +487,8 @@
 				CE1D1F371C229D7A004DC2D4 /* CKShopViewController.m */,
 				CE3BC4C01C23BF9000A324A7 /* CKMomentsViewController.h */,
 				CE3BC4C11C23BF9000A324A7 /* CKMomentsViewController.m */,
+				CE57F5171C27958E000E5BB3 /* CKSendMomentViewController.h */,
+				CE57F5181C27958E000E5BB3 /* CKSendMomentViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1002,6 +1007,7 @@
 				CE41C35B1C0594B400666823 /* UIButton+WebCache.m in Sources */,
 				CE2135151C04549E00EAF2AB /* MBProgressHUD.m in Sources */,
 				CE356C621C17FD520046E2B6 /* CKChatHelper.m in Sources */,
+				CE57F5191C27958E000E5BB3 /* CKSendMomentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
