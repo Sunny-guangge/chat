@@ -68,6 +68,13 @@
 		CE62C1631C06E932005B4518 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = CE62C1601C06E932005B4518 /* pinyin.c */; };
 		CE62C1661C06F52D005B4518 /* CKDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62C1651C06F52D005B4518 /* CKDataHelper.m */; };
 		CE62C1691C06F625005B4518 /* NSString+TL.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62C1681C06F625005B4518 /* NSString+TL.m */; };
+		CE708F2D1C27D9BC0021D332 /* CKMoment.m in Sources */ = {isa = PBXBuildFile; fileRef = CE708F2C1C27D9BC0021D332 /* CKMoment.m */; };
+		CE708F301C27DC060021D332 /* CKMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = CE708F2F1C27DC060021D332 /* CKMusic.m */; };
+		CE708F331C27DC120021D332 /* CKWeb.m in Sources */ = {isa = PBXBuildFile; fileRef = CE708F321C27DC120021D332 /* CKWeb.m */; };
+		CE708F361C27DF200021D332 /* CKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CE708F351C27DF200021D332 /* CKImage.m */; };
+		CE708F391C27FCA30021D332 /* CKLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE708F381C27FCA30021D332 /* CKLocation.m */; };
+		CE708F3C1C28061C0021D332 /* CKMusicMomentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE708F3B1C28061C0021D332 /* CKMusicMomentView.m */; };
+		CE708F3F1C2806340021D332 /* CKWebMomentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE708F3E1C2806340021D332 /* CKWebMomentView.m */; };
 		CE89FDA91C1924140098C9D9 /* CKChatBoxMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89FDA81C1924140098C9D9 /* CKChatBoxMoreView.m */; };
 		CE89FDAC1C1925AF0098C9D9 /* CKChatBoxMoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89FDAB1C1925AF0098C9D9 /* CKChatBoxMoreItem.m */; };
 		CE89FDAF1C1938B10098C9D9 /* CKChatBoxFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89FDAE1C1938B10098C9D9 /* CKChatBoxFaceView.m */; };
@@ -232,6 +239,20 @@
 		CE62C1651C06F52D005B4518 /* CKDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKDataHelper.m; sourceTree = "<group>"; };
 		CE62C1671C06F625005B4518 /* NSString+TL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TL.h"; sourceTree = "<group>"; };
 		CE62C1681C06F625005B4518 /* NSString+TL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TL.m"; sourceTree = "<group>"; };
+		CE708F2B1C27D9BC0021D332 /* CKMoment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMoment.h; sourceTree = "<group>"; };
+		CE708F2C1C27D9BC0021D332 /* CKMoment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMoment.m; sourceTree = "<group>"; };
+		CE708F2E1C27DC060021D332 /* CKMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMusic.h; sourceTree = "<group>"; };
+		CE708F2F1C27DC060021D332 /* CKMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMusic.m; sourceTree = "<group>"; };
+		CE708F311C27DC120021D332 /* CKWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKWeb.h; sourceTree = "<group>"; };
+		CE708F321C27DC120021D332 /* CKWeb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKWeb.m; sourceTree = "<group>"; };
+		CE708F341C27DF200021D332 /* CKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKImage.h; sourceTree = "<group>"; };
+		CE708F351C27DF200021D332 /* CKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKImage.m; sourceTree = "<group>"; };
+		CE708F371C27FCA30021D332 /* CKLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKLocation.h; sourceTree = "<group>"; };
+		CE708F381C27FCA30021D332 /* CKLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKLocation.m; sourceTree = "<group>"; };
+		CE708F3A1C28061C0021D332 /* CKMusicMomentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMusicMomentView.h; sourceTree = "<group>"; };
+		CE708F3B1C28061C0021D332 /* CKMusicMomentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMusicMomentView.m; sourceTree = "<group>"; };
+		CE708F3D1C2806340021D332 /* CKWebMomentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKWebMomentView.h; sourceTree = "<group>"; };
+		CE708F3E1C2806340021D332 /* CKWebMomentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKWebMomentView.m; sourceTree = "<group>"; };
 		CE89FDA71C1924140098C9D9 /* CKChatBoxMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatBoxMoreView.h; sourceTree = "<group>"; };
 		CE89FDA81C1924140098C9D9 /* CKChatBoxMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKChatBoxMoreView.m; sourceTree = "<group>"; };
 		CE89FDAA1C1925AF0098C9D9 /* CKChatBoxMoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKChatBoxMoreItem.h; sourceTree = "<group>"; };
@@ -521,6 +542,16 @@
 		CE41C3171C058CDF00666823 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE708F2B1C27D9BC0021D332 /* CKMoment.h */,
+				CE708F2C1C27D9BC0021D332 /* CKMoment.m */,
+				CE708F2E1C27DC060021D332 /* CKMusic.h */,
+				CE708F2F1C27DC060021D332 /* CKMusic.m */,
+				CE708F311C27DC120021D332 /* CKWeb.h */,
+				CE708F321C27DC120021D332 /* CKWeb.m */,
+				CE708F341C27DF200021D332 /* CKImage.h */,
+				CE708F351C27DF200021D332 /* CKImage.m */,
+				CE708F371C27FCA30021D332 /* CKLocation.h */,
+				CE708F381C27FCA30021D332 /* CKLocation.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -534,6 +565,10 @@
 				CE3BC4C41C23C46B00A324A7 /* CKMomentTableViewCell.m */,
 				CE3BC4C61C240E0E00A324A7 /* CKMomentHeaderView.h */,
 				CE3BC4C71C240E0E00A324A7 /* CKMomentHeaderView.m */,
+				CE708F3A1C28061C0021D332 /* CKMusicMomentView.h */,
+				CE708F3B1C28061C0021D332 /* CKMusicMomentView.m */,
+				CE708F3D1C2806340021D332 /* CKWebMomentView.h */,
+				CE708F3E1C2806340021D332 /* CKWebMomentView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -945,15 +980,19 @@
 				CE41C3601C0594B400666823 /* UIImageView+WebCache.m in Sources */,
 				CE4464BD1C16D790000F80DB /* CKFace.m in Sources */,
 				CE41C3581C0594B400666823 /* SDWebImageDownloaderOperation.m in Sources */,
+				CE708F331C27DC120021D332 /* CKWeb.m in Sources */,
 				CE8D90C51C0C543B00CE6381 /* CKNewsTableViewController.m in Sources */,
 				CEB1B4081C0844930057E971 /* CKSetting.m in Sources */,
 				CE8D90BC1C0C3FFE00CE6381 /* CKUserDetailCell.m in Sources */,
 				CE41C31D1C058D4400666823 /* CKDiscoverTableViewController.m in Sources */,
+				CE708F301C27DC060021D332 /* CKMusic.m in Sources */,
 				CE62C1661C06F52D005B4518 /* CKDataHelper.m in Sources */,
 				CE62C1621C06E932005B4518 /* ChineseString.m in Sources */,
 				CEA8D89C1C1A71B900B6FACE /* CKLocationMessageTableViewCell.m in Sources */,
+				CE708F3F1C2806340021D332 /* CKWebMomentView.m in Sources */,
 				CE356C5F1C17E1610046E2B6 /* CKFaceHelper.m in Sources */,
 				CE41C35F1C0594B400666823 /* UIImageView+HighlightedWebCache.m in Sources */,
+				CE708F2D1C27D9BC0021D332 /* CKMoment.m in Sources */,
 				CEA8D8901C1A6F1000B6FACE /* CKMessageCommonTableViewCell.m in Sources */,
 				CE5080481BCE668F00074DA9 /* AppDelegate.m in Sources */,
 				CE41C3561C0594B400666823 /* SDWebImageDecoder.m in Sources */,
@@ -962,6 +1001,7 @@
 				CE38C1001BFED7DD0058C6B2 /* ViewController.m in Sources */,
 				CE1D1F381C229D7A004DC2D4 /* CKShopViewController.m in Sources */,
 				CE8D90C81C0C582300CE6381 /* CKTableViewHeaderFooterView.m in Sources */,
+				CE708F3C1C28061C0021D332 /* CKMusicMomentView.m in Sources */,
 				CE62C1561C06BA8E005B4518 /* CKUser.m in Sources */,
 				CE41C30E1C058B3500666823 /* CKMessageTableViewCell.m in Sources */,
 				CEA8D89F1C1A71DA00B6FACE /* CKSystemMessageCommonTableViewCell.m in Sources */,
@@ -996,6 +1036,7 @@
 				CE41C3261C058D7E00666823 /* CKMessageTableViewController.m in Sources */,
 				CE8D90B91C0C2F4E00CE6381 /* CKUIHelper.m in Sources */,
 				CE89FDB51C19390B0098C9D9 /* CKChatBoxFaceMenuView.m in Sources */,
+				CE708F361C27DF200021D332 /* CKImage.m in Sources */,
 				CE89FDAC1C1925AF0098C9D9 /* CKChatBoxMoreItem.m in Sources */,
 				CEA8D8E61C1A8EE200B6FACE /* CKChatBoxViewController.m in Sources */,
 				CE41C3551C0594B400666823 /* SDWebImageCompat.m in Sources */,
@@ -1005,6 +1046,7 @@
 				CE41C32C1C058D9C00666823 /* CKContactViewController.m in Sources */,
 				CE41C3251C058D7E00666823 /* CKChatViewController.m in Sources */,
 				CE41C35B1C0594B400666823 /* UIButton+WebCache.m in Sources */,
+				CE708F391C27FCA30021D332 /* CKLocation.m in Sources */,
 				CE2135151C04549E00EAF2AB /* MBProgressHUD.m in Sources */,
 				CE356C621C17FD520046E2B6 /* CKChatHelper.m in Sources */,
 				CE57F5191C27958E000E5BB3 /* CKSendMomentViewController.m in Sources */,

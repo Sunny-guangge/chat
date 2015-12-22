@@ -7,7 +7,20 @@
 //
 
 #import "CKCommonTableViewCell.h"
+#import "CKMoment.h"
+
+@protocol CKMomentTableViewCellDelegate <NSObject>
+
+- (void)clickUserAvatarORUserNameWithUser:(CKUser *)user;
+
+- (void)clickUserLocation:(CKLocation *)location;
+
+@end
 
 @interface CKMomentTableViewCell : CKCommonTableViewCell
+
+@property (nonatomic,strong) CKMoment *moment;
+
+@property (nonatomic,assign) id<CKMomentTableViewCellDelegate>delegate;
 
 @end

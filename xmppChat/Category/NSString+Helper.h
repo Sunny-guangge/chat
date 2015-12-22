@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (Helper)
 
@@ -37,5 +38,16 @@
  *  @param key 写入键值
  */
 - (void)saveToNSDefaultsWithKey:(NSString *)key;
+
+/**
+ *  计算文字的高度和宽度
+ *
+ *  @param font
+ *  @param maxW 最宽的宽度
+ *
+ *  @return CGSize
+ */
+- (CGSize)sizeWithFont:(UIFont *)font maxW:(CGFloat)maxW;
+- (CGSize)sizeWithFont:(UIFont *)font;
 
 @end
