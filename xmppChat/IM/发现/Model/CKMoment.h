@@ -40,6 +40,11 @@ typedef NS_ENUM(NSInteger,CKMomentType) {
 @property (nonatomic,strong) NSString *time;
 
 /**
+ *  消息的来源
+ */
+@property (nonatomic,strong) NSString *from;
+
+/**
  *  文字
  */
 @property (nonatomic,strong) NSString *moment_text;

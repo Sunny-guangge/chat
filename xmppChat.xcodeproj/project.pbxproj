@@ -98,6 +98,8 @@
 		CEB1B4051C083DE10057E971 /* Mine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1B4031C083DE10057E971 /* Mine.xcassets */; };
 		CEB1B4081C0844930057E971 /* CKSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1B4071C0844930057E971 /* CKSetting.m */; };
 		CEBCA87C1C080D8300E09405 /* Friends.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBCA87B1C080D8300E09405 /* Friends.xcassets */; };
+		CEF3C5E81C2A729E0018FF47 /* CKImageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C5E71C2A729E0018FF47 /* CKImageListView.m */; };
+		CEF3C5EB1C2A90DE0018FF47 /* CKMomentMessageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3C5EA1C2A90DE0018FF47 /* CKMomentMessageHelper.m */; };
 		CEFBFC011BCF91F40062961D /* CKLoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFBFC001BCF91F40062961D /* CKLoginUser.m */; };
 		CEFBFC091BCF93330062961D /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFBFC041BCF93330062961D /* NSArray+Log.m */; };
 		CEFBFC0A1BCF93330062961D /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFBFC061BCF93330062961D /* NSString+Helper.m */; };
@@ -297,6 +299,10 @@
 		CEB1B4071C0844930057E971 /* CKSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSetting.m; sourceTree = "<group>"; };
 		CEB1B40B1C0845B50057E971 /* CKEnumerate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKEnumerate.h; sourceTree = "<group>"; };
 		CEBCA87B1C080D8300E09405 /* Friends.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Friends.xcassets; sourceTree = "<group>"; };
+		CEF3C5E61C2A729E0018FF47 /* CKImageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKImageListView.h; sourceTree = "<group>"; };
+		CEF3C5E71C2A729E0018FF47 /* CKImageListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKImageListView.m; sourceTree = "<group>"; };
+		CEF3C5E91C2A90DE0018FF47 /* CKMomentMessageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMomentMessageHelper.h; sourceTree = "<group>"; };
+		CEF3C5EA1C2A90DE0018FF47 /* CKMomentMessageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMomentMessageHelper.m; sourceTree = "<group>"; };
 		CEFBFBFF1BCF91F40062961D /* CKLoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKLoginUser.h; sourceTree = "<group>"; };
 		CEFBFC001BCF91F40062961D /* CKLoginUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKLoginUser.m; sourceTree = "<group>"; };
 		CEFBFC031BCF93330062961D /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
@@ -552,6 +558,8 @@
 				CE708F351C27DF200021D332 /* CKImage.m */,
 				CE708F371C27FCA30021D332 /* CKLocation.h */,
 				CE708F381C27FCA30021D332 /* CKLocation.m */,
+				CEF3C5E91C2A90DE0018FF47 /* CKMomentMessageHelper.h */,
+				CEF3C5EA1C2A90DE0018FF47 /* CKMomentMessageHelper.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -569,6 +577,8 @@
 				CE708F3B1C28061C0021D332 /* CKMusicMomentView.m */,
 				CE708F3D1C2806340021D332 /* CKWebMomentView.h */,
 				CE708F3E1C2806340021D332 /* CKWebMomentView.m */,
+				CEF3C5E61C2A729E0018FF47 /* CKImageListView.h */,
+				CEF3C5E71C2A729E0018FF47 /* CKImageListView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -973,6 +983,7 @@
 				CEFBFC091BCF93330062961D /* NSArray+Log.m in Sources */,
 				CE62C1591C06C052005B4518 /* CKFriendListHeaderView.m in Sources */,
 				CE4E8AC61C0D49A4007D2C5E /* CKUserDetailTableViewController.m in Sources */,
+				CEF3C5E81C2A729E0018FF47 /* CKImageListView.m in Sources */,
 				CE4E8AC31C0D4114007D2C5E /* CKPersonalDataTableViewController.m in Sources */,
 				CE41C35A1C0594B400666823 /* SDWebImagePrefetcher.m in Sources */,
 				CE41C30B1C0576B400666823 /* UIView+TL.m in Sources */,
@@ -1004,6 +1015,7 @@
 				CE708F3C1C28061C0021D332 /* CKMusicMomentView.m in Sources */,
 				CE62C1561C06BA8E005B4518 /* CKUser.m in Sources */,
 				CE41C30E1C058B3500666823 /* CKMessageTableViewCell.m in Sources */,
+				CEF3C5EB1C2A90DE0018FF47 /* CKMomentMessageHelper.m in Sources */,
 				CEA8D89F1C1A71DA00B6FACE /* CKSystemMessageCommonTableViewCell.m in Sources */,
 				CE41C3541C0594B400666823 /* SDImageCache.m in Sources */,
 				CE8D90C21C0C486200CE6381 /* CKSetTableViewController.m in Sources */,

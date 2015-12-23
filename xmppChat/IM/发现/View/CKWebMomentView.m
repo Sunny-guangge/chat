@@ -89,4 +89,12 @@
     return _clickButton;
 }
 
+- (NSMutableArray *)array
+{
+    if (_array == nil) {
+        
+    }
+    return _array;
+}
+
 @end

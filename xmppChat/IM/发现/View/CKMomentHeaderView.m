@@ -144,7 +144,7 @@
 {
     if (_blackImageView == nil) {
         _blackImageView = [[UIImageView alloc] init];
-        _blackImageView.backgroundColor = [UIColor blackColor];
+        _blackImageView.backgroundColor = [UIColor whiteColor];
         _blackImageView.alpha = 0.5;
     }
     return _blackImageView;

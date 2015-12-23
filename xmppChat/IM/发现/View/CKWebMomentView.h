@@ -21,4 +21,6 @@
 
 @property (nonatomic,weak) id<CKWebMomentViewDelegate>delegate;
 
+@property (nonatomic,strong) NSMutableArray *array;
+
 @end

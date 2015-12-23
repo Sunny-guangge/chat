@@ -9,6 +9,7 @@
 #import "CKMomentsViewController.h"
 #import "CKMomentTableViewCell.h"
 #import "CKMomentHeaderView.h"
+#import "CKMomentMessageHelper.h"
 
 @interface CKMomentsViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate,CKMomentHeaderViewDelegate>
 
@@ -45,8 +46,24 @@
     
     
     [self.momentTableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    [self.momentTableView registerClass:[CKMomentTableViewCell class] forCellReuseIdentifier:@"CKMomentTableViewCell"];
+    
+    [self loadMessage];
 }
 
+- (void)loadMessage
+{
+    self.momentArray = [[CKMomentMessageHelper shareMomentMessageHelper] getUserMomentMessage];
+    [self.momentTableView reloadData];
+}
+
+- (NSMutableArray *)momentArray
+{
+    if (_momentArray == nil) {
+        _momentArray = [[NSMutableArray alloc] init];
+    }
+    return _momentArray;
+}
 
 #pragma mark - Getter
 - (UIBarButtonItem *)rightBarButtonItem
@@ -88,21 +105,19 @@
 #pragma mark - UITableViewDelegate && UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//    return _momentArray.count;
-    return 20;
+    return _momentArray.count;
+//    return 20;
 }
 
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CKMomentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"haha"];
+    CKMomentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CKMomentTableViewCell"];
     
-    if (cell == nil) {
-        cell = [[CKMomentTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"haha"];
-    }
+    CKMoment *moment = [self.momentArray objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = @(indexPath.row).description;
+    cell.moment = moment;
     
     cell.topLineStyle = CellLineStyleNone;
     cell.bottomLineStyle = CellLineStyleFill;
@@ -117,7 +132,9 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 80;
+    CKMoment *moment = [self.momentArray objectAtIndex:indexPath.row];
+    
+    return moment.cellHeight;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

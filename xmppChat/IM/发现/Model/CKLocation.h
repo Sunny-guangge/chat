@@ -10,4 +10,6 @@
 
 @interface CKLocation : NSObject
 
+@property (nonatomic,strong) NSString *location_String;
+
 @end
