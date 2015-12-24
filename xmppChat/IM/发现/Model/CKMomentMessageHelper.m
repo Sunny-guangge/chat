@@ -208,12 +208,12 @@ static CKMomentMessageHelper *momentMessageHelper;
     [imageArray44 addObject:image14];
     [imageArray44 addObject:image24];
     [imageArray44 addObject:image34];
-    [imageArray44 addObject:image9];
-    [imageArray44 addObject:image9];
-    [imageArray44 addObject:image9];
-    [imageArray44 addObject:image9];
-    [imageArray44 addObject:image9];
-    [imageArray44 addObject:image9];
+//    [imageArray44 addObject:image9];
+//    [imageArray44 addObject:image9];
+//    [imageArray44 addObject:image9];
+//    [imageArray44 addObject:image9];
+//    [imageArray44 addObject:image9];
+//    [imageArray44 addObject:image9];
     
     moment4.imageArray = imageArray44;
     
