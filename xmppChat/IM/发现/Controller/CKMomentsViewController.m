@@ -10,8 +10,11 @@
 #import "CKMomentTableViewCell.h"
 #import "CKMomentHeaderView.h"
 #import "CKMomentMessageHelper.h"
+#import "CKUserViewController.h"
+#import "CKLocationViewController.h"
+#import "CKWebViewController.h"
 
-@interface CKMomentsViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate,CKMomentHeaderViewDelegate>
+@interface CKMomentsViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate,CKMomentHeaderViewDelegate,CKMomentTableViewCellDelegate>
 
 @property (nonatomic,strong) UIBarButtonItem *rightBarButtonItem;
 
@@ -119,6 +122,8 @@
     
     cell.moment = moment;
     
+    cell.delegate = self;
+    
     cell.topLineStyle = CellLineStyleNone;
     cell.bottomLineStyle = CellLineStyleFill;
     
@@ -155,6 +160,36 @@
     //点击进入到用户的个人页面
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"进入到个人主页？" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:@"确认", nil];
     [alertView show];
+}
+
+#pragma mark - CKMomentTableViewCellDelegate
+//点击用户头像
+- (void)clickUserAvatarORUserNameWithUser:(CKUser *)user
+{
+    CKUserViewController *userVC = [[CKUserViewController alloc] init];
+    
+    [self.navigationController pushViewController:userVC animated:YES];
+}
+//点击用户位置信息
+- (void)clickUserLocation:(CKLocation *)location
+{
+    CKLocationViewController *locationVC = [[CKLocationViewController alloc] init];
+    
+    [self.navigationController pushViewController:locationVC animated:YES];
+}
+//点击moment中得音乐
+- (void)clickUserMusicWithMusic:(CKMusic *)music
+{
+    CKWebViewController *webVC = [[CKWebViewController alloc] init];
+    
+    [self.navigationController pushViewController:webVC animated:YES];
+}
+//点击moment中得web
+- (void)clickUserWebWithWeb:(CKWeb *)web
+{
+    CKWebViewController *webVC = [[CKWebViewController alloc] init];
+    
+    [self.navigationController pushViewController:webVC animated:YES];
 }
 
 @end

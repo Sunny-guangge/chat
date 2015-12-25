@@ -54,6 +54,9 @@
 		CE4464C41C16DDAE000F80DB /* normal_face.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE4464C21C16DDAE000F80DB /* normal_face.plist */; };
 		CE4E8AC31C0D4114007D2C5E /* CKPersonalDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC21C0D4114007D2C5E /* CKPersonalDataTableViewController.m */; };
 		CE4E8AC61C0D49A4007D2C5E /* CKUserDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8AC51C0D49A4007D2C5E /* CKUserDetailTableViewController.m */; };
+		CE5019BF1C2D18D300ADB901 /* CKUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5019BE1C2D18D300ADB901 /* CKUserViewController.m */; };
+		CE5019C21C2D191F00ADB901 /* CKLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5019C11C2D191F00ADB901 /* CKLocationViewController.m */; };
+		CE5019C51C2D195F00ADB901 /* CKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5019C41C2D195F00ADB901 /* CKWebViewController.m */; };
 		CE5080451BCE668F00074DA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5080441BCE668F00074DA9 /* main.m */; };
 		CE5080481BCE668F00074DA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5080471BCE668F00074DA9 /* AppDelegate.m */; };
 		CE50804E1BCE668F00074DA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE50804C1BCE668F00074DA9 /* Main.storyboard */; };
@@ -214,6 +217,12 @@
 		CE4E8AC41C0D49A4007D2C5E /* CKUserDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUserDetailTableViewController.h; sourceTree = "<group>"; };
 		CE4E8AC51C0D49A4007D2C5E /* CKUserDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKUserDetailTableViewController.m; sourceTree = "<group>"; };
 		CE4E8AD01C0D8F66007D2C5E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CE5019BD1C2D18D300ADB901 /* CKUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUserViewController.h; sourceTree = "<group>"; };
+		CE5019BE1C2D18D300ADB901 /* CKUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKUserViewController.m; sourceTree = "<group>"; };
+		CE5019C01C2D191F00ADB901 /* CKLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKLocationViewController.h; sourceTree = "<group>"; };
+		CE5019C11C2D191F00ADB901 /* CKLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKLocationViewController.m; sourceTree = "<group>"; };
+		CE5019C31C2D195F00ADB901 /* CKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKWebViewController.h; sourceTree = "<group>"; };
+		CE5019C41C2D195F00ADB901 /* CKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKWebViewController.m; sourceTree = "<group>"; };
 		CE50803F1BCE668F00074DA9 /* xmppChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5080431BCE668F00074DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5080441BCE668F00074DA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -514,6 +523,12 @@
 				CE1D1F371C229D7A004DC2D4 /* CKShopViewController.m */,
 				CE3BC4C01C23BF9000A324A7 /* CKMomentsViewController.h */,
 				CE3BC4C11C23BF9000A324A7 /* CKMomentsViewController.m */,
+				CE5019BD1C2D18D300ADB901 /* CKUserViewController.h */,
+				CE5019BE1C2D18D300ADB901 /* CKUserViewController.m */,
+				CE5019C01C2D191F00ADB901 /* CKLocationViewController.h */,
+				CE5019C11C2D191F00ADB901 /* CKLocationViewController.m */,
+				CE5019C31C2D195F00ADB901 /* CKWebViewController.h */,
+				CE5019C41C2D195F00ADB901 /* CKWebViewController.m */,
 				CE57F5171C27958E000E5BB3 /* CKSendMomentViewController.h */,
 				CE57F5181C27958E000E5BB3 /* CKSendMomentViewController.m */,
 			);
@@ -998,6 +1013,7 @@
 				CE41C31D1C058D4400666823 /* CKDiscoverTableViewController.m in Sources */,
 				CE708F301C27DC060021D332 /* CKMusic.m in Sources */,
 				CE62C1661C06F52D005B4518 /* CKDataHelper.m in Sources */,
+				CE5019BF1C2D18D300ADB901 /* CKUserViewController.m in Sources */,
 				CE62C1621C06E932005B4518 /* ChineseString.m in Sources */,
 				CEA8D89C1C1A71B900B6FACE /* CKLocationMessageTableViewCell.m in Sources */,
 				CE708F3F1C2806340021D332 /* CKWebMomentView.m in Sources */,
@@ -1010,6 +1026,7 @@
 				CE41C3531C0594B400666823 /* NSData+ImageContentType.m in Sources */,
 				CEA8D8E31C1A8ECA00B6FACE /* CKChatMessageTableViewController.m in Sources */,
 				CE38C1001BFED7DD0058C6B2 /* ViewController.m in Sources */,
+				CE5019C21C2D191F00ADB901 /* CKLocationViewController.m in Sources */,
 				CE1D1F381C229D7A004DC2D4 /* CKShopViewController.m in Sources */,
 				CE8D90C81C0C582300CE6381 /* CKTableViewHeaderFooterView.m in Sources */,
 				CE708F3C1C28061C0021D332 /* CKMusicMomentView.m in Sources */,
@@ -1056,6 +1073,7 @@
 				CE1D1F321C22713A004DC2D4 /* CKShakeMenuButton.m in Sources */,
 				CE62C1691C06F625005B4518 /* NSString+TL.m in Sources */,
 				CE41C32C1C058D9C00666823 /* CKContactViewController.m in Sources */,
+				CE5019C51C2D195F00ADB901 /* CKWebViewController.m in Sources */,
 				CE41C3251C058D7E00666823 /* CKChatViewController.m in Sources */,
 				CE41C35B1C0594B400666823 /* UIButton+WebCache.m in Sources */,
 				CE708F391C27FCA30021D332 /* CKLocation.m in Sources */,
