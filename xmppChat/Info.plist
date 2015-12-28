@@ -39,5 +39,32 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>UIApplicationShortcutItems</key>
+    <array>
+        <dict>
+            <key>UIApplicationShortcutItemType</key>
+            <string>com.chuangke.xmppChat1</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>免打扰一小时</string>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemType</key>
+            <string>com.chuangke.xmppChat2</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>付款</string>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemType</key>
+            <string>com.chuangke.xmppChat3</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>扫一扫</string>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemType</key>
+            <string>com.chuangke.xmppChat4</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>我的二维码</string>
+        </dict>
+    </array>
 </dict>
 </plist>

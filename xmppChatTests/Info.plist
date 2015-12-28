@@ -22,18 +22,5 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>UIApplicationShortcutItems</key>
-	<array>
-		<dict>
-			<key>UIApplicationShortcutItemType</key>
-			<string>com.chuangke.xmppChat</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Static Shortcut</string>
-			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>available at launch</string>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string>iCon1</string>
-		</dict>
-	</array>
 </dict>
 </plist>
