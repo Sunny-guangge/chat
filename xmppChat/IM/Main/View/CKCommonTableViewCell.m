@@ -87,8 +87,8 @@
     if (_topLineView == nil) {
         
         _topLineView = [[UIView alloc] init];
-        [_topLineView setFrameHeight:0.5];
-        _topLineView.alpha = 0.5;
+        [_topLineView setFrameHeight:0.5f];
+        _topLineView.alpha = 0.4;
         _topLineView.backgroundColor = [UIColor grayColor];
         [self.contentView addSubview:_topLineView];
         
@@ -101,9 +101,9 @@
     if (_bottomLineView == nil) {
         
         _bottomLineView = [[UIView alloc] init];
-        _bottomLineView.alpha = 0.5;
+        _bottomLineView.alpha = 0.4;
         _bottomLineView.backgroundColor = [UIColor grayColor];
-        [_bottomLineView setFrameHeight:0.5];
+        [_bottomLineView setFrameHeight:0.5f];
         [self.contentView addSubview:_bottomLineView];
         
     }

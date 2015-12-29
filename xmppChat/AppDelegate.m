@@ -17,6 +17,9 @@
 #import "TURNSocket.h"
 #import <UIKit/UITouch.h>
 #import "CKMessageTableViewController.h"
+#import "CKViewController.h"
+#import "CKChatNavigationViewController.h"
+#import "CKShakeViewController.h"
 
 #define CKHostName @"192.168.1.11"
 
@@ -61,25 +64,29 @@
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler{
     //判断先前我们设置的唯一标识
     if([shortcutItem.type isEqualToString:@"com.chuangke.xmppChat1"]){
-        CKMessageTableViewController *messageVC = [[CKMessageTableViewController alloc] init];
-        //设置当前的VC 为rootVC
-        [self.window.rootViewController presentViewController:messageVC animated:YES completion:^{
-        }];
+        //摇一摇
+        CKShakeViewController *shakeVC = [[CKShakeViewController alloc] init];
+        
+        UIViewController *vc = [self visibleViewController];
+        
+        [vc.navigationController pushViewController:shakeVC animated:YES];
         
     }
     if([shortcutItem.type isEqualToString:@"com.chuangke.xmppChat2"]){
+        //付款
+        CKMessageTableViewController *messageVC = [[CKMessageTableViewController alloc] init];
+        //设置当前的VC 为rootVC
+        UIViewController *vc = [self visibleViewController];
+        
+        [vc.navigationController pushViewController:messageVC animated:YES];
+    }
+    if([shortcutItem.type isEqualToString:@"com.chuangke.xmppChat3"]){//扫一扫
         CKMessageTableViewController *messageVC = [[CKMessageTableViewController alloc] init];
         //设置当前的VC 为rootVC
         [self.window.rootViewController presentViewController:messageVC animated:YES completion:^{
         }];
     }
-    if([shortcutItem.type isEqualToString:@"com.chuangke.xmppChat3"]){
-        CKMessageTableViewController *messageVC = [[CKMessageTableViewController alloc] init];
-        //设置当前的VC 为rootVC
-        [self.window.rootViewController presentViewController:messageVC animated:YES completion:^{
-        }];
-    }
-    if([shortcutItem.type isEqualToString:@"com.chuangke.xmppChat4"]){
+    if([shortcutItem.type isEqualToString:@"com.chuangke.xmppChat4"]){//我的二维码
         CKMessageTableViewController *messageVC = [[CKMessageTableViewController alloc] init];
         //设置当前的VC 为rootVC
         [self.window.rootViewController presentViewController:messageVC animated:YES completion:^{
@@ -141,10 +148,21 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    //需要添加在没有网络的情况下不能链接
     
+    
+    //需要添加在没有网络的情况下不能链接
+    [self changeStoryboardWithBool:YES];
     //设置XMPPStream
     [self setupstream];
+    
+    
+    
+    if ([launchOptions objectForKey:UIApplicationLaunchOptionsShortcutItemKey]) {
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"收到消息" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:@"取消", nil];
+        [alertView show];
+        
+    }
     return YES;
 }
 
@@ -300,7 +318,7 @@
     
     if ([userName isEmptyString] || [password isEmptyString]) {
         
-        [self changeStoryboardWithBool:NO];
+//        [self changeStoryboardWithBool:NO];
         
         return;
     }
@@ -320,12 +338,12 @@
     
     if (error) {
         NSLog(@"链接请求发送出错 － %@",error.localizedDescription);
-        [self changeStoryboardWithBool:NO];
+//        [self changeStoryboardWithBool:NO];
     }else
     {
         NSLog(@"链接请求发送成功");
         
-        [self changeStoryboardWithBool:YES];
+//        [self changeStoryboardWithBool:YES];
     }
     
 }
@@ -345,7 +363,7 @@
 {
     [self disconnect];
     
-    [self changeStoryboardWithBool:NO];
+//    [self changeStoryboardWithBool:NO];
 }
 
 #pragma mark - 代理方法
@@ -373,7 +391,7 @@
     if (_failBlock != nil) {
         _failBlock(@"服务器地址不对！");
     }
-    [self changeStoryboardWithBool:NO];
+//    [self changeStoryboardWithBool:NO];
     NSLog(@"连接失败");
 }
 
@@ -411,7 +429,7 @@
     [self goOnline];
     
     
-    [self changeStoryboardWithBool:YES];
+//    [self changeStoryboardWithBool:YES];
 }
 
 - (void)xmppStream:(XMPPStream *)sender didNotAuthenticate:(DDXMLElement *)error
@@ -425,7 +443,7 @@
     
     NSLog(@"身份验证失败");
     
-    [self changeStoryboardWithBool:NO];
+//    [self changeStoryboardWithBool:NO];
 }
 
 //请求好友列表
@@ -548,6 +566,39 @@
     
     [_socketList removeObject:sender];
 }
+
+#pragma mark - 找到当前所在的viewcontroller
+- (UIViewController *)visibleViewController {
+    UIViewController *rootViewController = self.window.rootViewController;
+    return [AppDelegate getVisibleViewControllerFrom:rootViewController];
+}
+
++ (UIViewController *) getVisibleViewControllerFrom:(UIViewController *) vc
+{
+    NSLog(@"找我在的地方");
+    
+    if ([vc isKindOfClass:[UINavigationController class]])
+    {
+        return [AppDelegate getVisibleViewControllerFrom:[((CKChatNavigationViewController *) vc) visibleViewController]];
+    }
+    else if ([vc isKindOfClass:[UITabBarController class]])
+    {
+        return [AppDelegate getVisibleViewControllerFrom:[((UITabBarController *) vc) selectedViewController]];
+    }
+    else
+    {
+        if (vc.presentedViewController)
+        {
+            return [AppDelegate getVisibleViewControllerFrom:vc.presentedViewController];
+        }
+        else
+        {
+            return vc;
+        }
+    }
+}
+
+
 
 
 
