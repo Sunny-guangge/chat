@@ -13,6 +13,7 @@
 #import "CKShakeViewController.h"
 #import "CKShopViewController.h"
 #import "CKMomentsViewController.h"
+#import "CKBottleViewController.h"
 
 @interface CKDiscoverTableViewController ()
 
@@ -119,6 +120,13 @@
         
         [self.navigationController pushViewController:shopVC animated:YES];
         
+    }
+    
+    if (indexPath.section == 2 && indexPath.row == 1) {
+        
+        CKBottleViewController *bottleVC = [[CKBottleViewController alloc] init];
+        
+        [self.navigationController pushViewController:bottleVC animated:YES];
     }
     
      [tableView deselectRowAtIndexPath:indexPath animated:NO]; 

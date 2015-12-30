@@ -157,12 +157,12 @@
     
     
     
-    if ([launchOptions objectForKey:UIApplicationLaunchOptionsShortcutItemKey]) {
-        
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"收到消息" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:@"取消", nil];
-        [alertView show];
-        
-    }
+//    if ([launchOptions objectForKey:UIApplicationLaunchOptionsShortcutItemKey]) {
+//        
+//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"收到消息" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:@"取消", nil];
+//        [alertView show];
+//        
+//    }
     return YES;
 }
 
